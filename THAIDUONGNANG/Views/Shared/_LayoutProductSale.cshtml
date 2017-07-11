@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    @Html.Raw(ViewBag.Title)
+    @Html.Raw(ViewBag.Description)
+    @Html.Raw(ViewBag.Keyword)
+    <link href="~/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <script src="~/Scripts/jquery-1.8.2.js"></script>
+    <script src="~/Content/Display/Js/crawler.js"></script>
+    <link href="~/Content/Display/Css/Sale.css" rel="stylesheet" />
+    <link href="~/Content/Display/Css/jquery.mmenu.all.css" rel="stylesheet" />
+    <script src="~/Content/Display/Js/jquery.min.js"></script>
+    <script src="~/Content/Display/Js/jquery.mmenu.min.all.js"></script>
+    <script type="text/javascript">
+    $(function () {
+        $('nav#menu').mmenu({
+            extensions: ['effect-slide', 'pageshadow'],
+            header: true,
+            searchfield: true,
+            counters: true,
+            footer: {
+                add: true,
+                content: '<a href="mmenu.frebsite.nl">Visit website &rsaquo;</a>'
+            }
+        });
+    });
+    </script>
+     <script type="text/javascript">
+    marqueeInit({
+        uniqueid: 'mycrawler',
+        style: {
+
+            'width': '1190px',
+        },
+        inc: 1, //speed - pixel increment for each iteration of this marquee's movement
+        mouse: 'cursor driven', //mouseover behavior ('pause' 'cursor driven' or false)
+        moveatleast: 2,
+        neutral: 150,
+        persist: true,
+        savedirection: true
+    });
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $('.blink').each(function () {
+            var elem = $(this);
+            setInterval(function () {
+                if (elem.css('visibility') == 'hidden') {
+                    elem.css('visibility', 'visible');
+                } else {
+                    elem.css('visibility', 'hidden');
+                }
+            }, 900);
+        });
+    });
+    </script>
+
+    <link href="~/Content/Display/Css/Sale.css" rel="stylesheet" />
+</head>
+<body>
+    @RenderBody()
+    <div id="Dichvu">
+        <div class="Tear_Dichvu1 teardv"></div>
+        <div class="Tear_Dichvu2 teardv"></div>
+        <div class="Tear_Dichvu3 teardv"></div>
+        <div class="Tear_Dichvu4 teardv"></div>
+        <div class="Tear_Dichvu5 teardv"></div>
+    </div>
+    @{Html.RenderAction("PartialFootter", "Footter");}
+    @{ Html.RenderAction("Adw", "Homes"); }
+    
+</body>
+</html>

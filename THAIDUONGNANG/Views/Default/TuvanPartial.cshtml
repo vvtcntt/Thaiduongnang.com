@@ -1,0 +1,28 @@
+﻿@using (Html.BeginForm("Tuvan", "Default", FormMethod.Post))
+{
+<div id="Tuvan">
+    <div id="Main_Tuvan">
+        <div id="Content_Tuvan">
+            <div id="Left_Content_Tuvan">
+                <span class="tv1">Tư vấn mua sản phẩm</span>
+                <span class="tv2">Giúp bạn chọn lựa sản phẩm phù hợp, hiệu quả và tiết kiệm !</span>
+            </div>
+            <div id="Right_Content_Tuvan">
+                <div id="l_Left_Content_Tuvan">
+
+                    <span class="l1">Số thành viên trong gia đình</span>
+                    <input type="text" name="txtOrd1" id="txtOrd1" required="required" /> <span class="l2">đến</span>
+                    <input type="text" name="txtOrd2" id="txtOrd2" required="required" />
+                    <span class="l3">Bạn nhập giới hạn người sử dụng trong 1 ngày</span>
+                </div>
+                <div id="l_Right_Content_Tuvan">
+                    @*<button type="submit" id="btnxem" name="btnxem">Xem sản phẩm phù hợp</button>*@
+                    <button type="submit" id="btnxem" name="btnxem">Xem sản phẩm phù hợp</button>                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="Left_Tuvan"></div>
+    <div id="Right_Tuvan"></div>
+</div>
+}

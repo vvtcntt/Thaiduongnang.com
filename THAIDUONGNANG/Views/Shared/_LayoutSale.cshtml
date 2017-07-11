@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    @Html.Raw(ViewBag.Title)
+    @Html.Raw(ViewBag.Description)
+        @Html.Raw(ViewBag.Keyword)
+    <link href="~/Content/Display/Css/Index.css" rel="stylesheet" />
+     <link href="~/Content/Display/Css/Sale.css" rel="stylesheet" />
+    <script type="text/javascript" src="Js/jquery.js"></script>
+    <script src="~/Content/Display/Js/jquery.js"></script>
+    <script src="~/Content/Display/Js/crawler.js"></script>
+    <script type="text/javascript">
+        marqueeInit({
+            uniqueid: 'mycrawler',
+            style: {
+
+                'width': '1190px',
+            },
+            inc: 1, //speed - pixel increment for each iteration of this marquee's movement
+            mouse: 'cursor driven', //mouseover behavior ('pause' 'cursor driven' or false)
+            moveatleast: 2,
+            neutral: 150,
+            persist: true,
+            savedirection: true
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.blink').each(function () {
+                var elem = $(this);
+                setInterval(function () {
+                    if (elem.css('visibility') == 'hidden') {
+                        elem.css('visibility', 'visible');
+                    } else {
+                        elem.css('visibility', 'hidden');
+                    }
+                }, 900);
+            });
+        });
+    </script>
+</head>
+<body>
+
+ 
+        @RenderBody()
+    <footer>
+        @{Html.RenderAction("ControlFootter", "Footter");}
+  
+    </footer>
+</body>
+</html>

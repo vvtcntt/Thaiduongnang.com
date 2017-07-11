@@ -1,0 +1,37 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_LayoutDefault.cshtml";
+}
+@model THAIDUONGNANG.Models.tblMap
+ <div id="Contents">
+    <div class="Clear"></div>
+    <div class="Root">
+        <a href="/" title="Trang chủ" rel="nofollow"><span class="iCon"></span>Trang chủ</a> / Bản đồ
+    </div>
+    <div class="Clear"></div>
+    <div id="Products">
+
+        <div class="Clear"></div>
+        <div id="News">
+
+            <div id="LeftNews">
+                <div class="nVar_news">
+                    <h1>@Model.Name</h1>
+                    <div><span class="Cate"><span></span>Bản đồ</span><span class="Cata"><span></span>Thời gian gửi: @Model.DateCreate</span>  </div>
+                </div>
+                <div class="Description"> @Model.Description</div>
+
+                <div class="ContentNew">
+                    @Html.Raw(Model.Content)
+                      </div>
+            
+
+            </div>
+
+            @{Html.RenderAction("RightNews", "News");}
+
+
+        </div>
+    </div>
+    <div class="Clear"></div>
+</div>

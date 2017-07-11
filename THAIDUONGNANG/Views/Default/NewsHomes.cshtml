@@ -1,0 +1,36 @@
+﻿<div id="News_Homes">
+    <div id="nVar_NewsHomes">
+        <div id="Name_Newhomes"><span>Tin tức mới </span></div>
+        <hr id="hrn" />
+    </div>
+    <div id="Content_NewsHomes">
+        <div id="Left_NewHomes">
+            <iframe width="100%" height="235" src="https://www.youtube.com/embed/@Html.Raw(ViewBag.codevideo)?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div id="Center_NewHomes">
+            <div class="Top_Web">
+                <span><span class="iconweb"></span>Website thuộc hệ thống sơn hà</span>
+            </div>
+            <div class="Content_Center_NewHomes">
+                <ul class="ul1">
+
+                    @Html.Raw(ViewBag.chuoiurl)
+                     
+                </ul>
+            </div>
+        </div>
+        <div id="Right_NewHomes">
+            <div class="Top_Newshomes">
+                <span><span class="iconnews"></span>Tin tức mới nhất</span>
+            </div>
+            <div id="Content_Right_NewHomes">
+
+                @Html.Raw(ViewBag.chuoi)
+                 
+                 
+            </div>
+
+
+        </div>
+    </div>
+</div>

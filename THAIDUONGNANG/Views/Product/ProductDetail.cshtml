@@ -1,0 +1,269 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutDefault.cshtml";
+}
+
+@model THAIDUONGNANG.Models.tblProduct
+<div id="Contents">
+    <div class="Clear"></div>
+    <div class="Root">
+        @Html.Raw(ViewBag.nUrl)
+    </div>
+    <div class="Clear"></div>
+    @using (Html.BeginForm("Command", "Product", FormMethod.Post))
+    {
+        <div id="Products">
+            <div id="LeftProduct">
+                <div id="Top_Product">
+                    <div id="Left_Top_Product">
+                        <a href="" class="ajax" title=""><span class="bd"></span></a>
+                        <a href="/Product/PartialVideo?idCate=@Model.idCate&type=0" class="ajax" title=""><span class="hd"></span></a>
+                        <a href="/Product/PartialCertificate?idCate=@Model.idCate" class="Huongdan" title=""><span class="cc"></span></a>
+                        <a href="/Product/PartialVideo?idCate=@Model.idCate&type=1" class="ajax" title=""><span class="vd"></span></a>
+
+                    </div>
+                    <div id="Right_Top_Product">
+                        <a href="#" title="@Model.Name"><img src="@Model.ImageLinkDetail" alt="@Model.Name" /></a>
+                    </div>
+                </div>
+                <div id="Content_LeftProduct">
+                    <div class="nVar">
+                        <h1>@Model.Name</h1>
+                        <span>Mã sản phẩm : <span>@Model.Code</span> | Số lần xem <span>@Model.Visit</span> | Ngày cập nhật : @String.Format("{0:d/M/yyyy}", Model.DateCreate)</span>
+                    </div>
+                    <div class="Price_Product">
+                        <div class="Left_Price_Product">
+                            <div class="Top_Left_Price_Product">
+                                <p class="Pricepd"><span class="iCon"></span> Giá niêm yết : <span>@string.Format("{0:#,#}", @Model.Price) vnđ</span></p>
+                                <p class="PriceSalepd"><span class="iCon"></span> Giá khuyến mại : <span>@string.Format("{0:#,#}", @Model.PriceSale) vnđ</span></p>
+                            </div>
+                            <div class="bottom_Left_Price_Product">
+                                <button type="submit" name="btnOrd" id="btnOrd" class="btnOrd">Đặt hàng</button>
+                                <input type="text" value="@Model.id" id="idPro" name="idPro" style="opacity:0; height:1px; width:1px; float:right" />
+                                <input type="text" value="@Model.idCate" id="idCate" name="idCate" style="opacity: 0; height: 1px; width: 1px; float: right" />
+
+                            </div>
+
+                            <span class="Note"><span></span>Giá trên đã bao gồm hỗ trợ của tập đoàn điện lực Việt Nam : 1.000.000đ. Giá áp dụng tại Hà Nội, các khu vực khác vui lòng liên hệ Hotline dưới chân website. Giảm thêm cho khách liên hệ !</span>
+                        </div>
+                        <div class="Right_Price_Product">
+                            <a title="" onclick="javascript:return Hoigia(1)">Thử cái nào</a>
+                            <a href="/quy-trinh-mua-san-pham-thai-duong-nang-son-ha.html" title="Hướng dẫn mua hàng" rel="nofollow"><span class="iCon_mh"></span>Hướng dẫn mua hàng</a>
+                            <a href="/chinh-sach-thanh-toan-mua-thai-duong-nang.html" title="Phương thức thanh toán" rel="nofollow"><span class="iCon_tt"></span>Phương thức thanh toán</a>
+                            <a href="/chinh-sach-van-chuyen-va-giao-hang-thai-duong-nang.html" title="Phương thức vận chuyển và lắp đăt" rel="nofollow"><span class="iCon_vc"></span>Phương thức vận chuyển và lắp đặt</a>
+                            <a href="/chinh-sach-bao-hanh-thai-duong-nang-son-ha.html" title="quy định bảo hành" rel="nofollow"><span class="iCon_bh"></span>Quy định bảo hành</a>
+                        </div>
+                    </div>
+                    @Html.Raw(ViewBag.image)
+                    <div class="Parameter">
+                        <div class="Nvar1">
+                            <div class="Name_one">
+                                <span class="iCon"></span>
+                                <span class="Name">Thông số kỹ thuật @Model.Name</span>
+                            </div>
+                        </div>
+                        <div class="Content_Parameter">
+                            <table>
+                                <tr>
+                                    <td>Tên sản phẩm :</td>
+                                    <td><a style="color:#333; font-weight:bold" href="@Request.Url.ToString()" title="@Model.Name">@Model.Name</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Mã sản phẩm :</td>
+                                    <td>@Model.Code</td>
+                                </tr>
+                                @if (Model.Dungtich != "")
+                                {
+                                    <tr>
+                                        <td>Dung tích :</td>
+                                        <td>@Model.Dungtich lít</td>
+                                    </tr>
+                                }
+
+                                <tr>
+                                    <td>Xuất xứ :</td>
+                                    <td>Chính hãng</td>
+                                </tr>
+                                <tr>
+                                    <td>Bảo hành :</td>
+                                    <td>
+                                        @Model.Warranty năm
+                                    </td>
+                                </tr>
+                                @if (Model.SoOng != "")
+                                {
+                                    <tr>
+                                        <td>Số ống :</td>
+                                        <td>@Model.SoOng ống</td>
+                                    </tr>
+                                }
+                                @if (Model.LoaiOng != "" || Model != null)
+                                {
+                                    <tr>
+                                        <td>Loại ống :</td>
+
+                                        @Html.Raw(ViewBag.loaiong)
+                                    </tr>
+                                }
+                                <tr>
+                                    <td>Kích thước (Dài x Rộng x Cao)(mm):</td>
+                                    <td>@Model.KichThuocOng</td>
+                                </tr>
+                                @if (Model.KichThuocDNVao != "")
+                                {
+                                    <tr>
+                                        <td>Kích thước đường nước vào:</td>
+                                        <td>
+                                            @Model.KichThuocDNVao
+                                        </td>
+                                    </tr>
+                                }
+                                @if (Model.KichThuocDNRa != "")
+                                {
+                                    <tr>
+                                        <td>Kích thước đường nước ra:</td>
+                                        <td>@Model.KichThuocDNRa  </td>
+                                    </tr>
+                                }
+                                @if (Model.SoNguoiSuDung > 0)
+                                {
+                                    <tr>
+                                        <td>Số người sử dụng phù hợp :</td>
+                                        <td><= @Model.SoNguoiSuDung người</td>
+                                    </tr>
+                                }
+                                <tr>
+                                    <td>Phụ kiện đi kèm (A/d tại Hà Nội) :</td>
+                                    <td>
+                                        @Model.Access
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </div>
+                    </div>
+                    <div class="Advantage">
+                        <div class="Nvar1">
+                            <div class="Name_one">
+                                <span class="iCon"></span>
+                                <span class="Name">Ưu điểm chính của @Model.Name</span>
+                            </div>
+                        </div>
+                        <div class="Content_Advan">
+                            @Html.Raw(Model.Info)
+                        </div>
+                    </div>
+                    <div class="ContentProduct">
+                        <div class="Nvar1">
+                            <div class="Name_one">
+                                <span class="iCon"></span>
+                                <span class="Name">Đặc điểm của @Model.Name</span>
+                            </div>
+                        </div>
+                        <div class="Content_ContentProduct">
+                            @Html.Raw(Model.Content)
+                        </div>
+                        @if (ViewBag.video != null && ViewBag.video != "")
+                        {
+                            <div class="Nvar1">
+                                <div class="Name_one">
+                                    <span class="iCon"></span>
+                                    <span class="Name">Video giới thiệu @Html.Raw(ViewBag.menuname)</span>
+                                </div>
+                            </div>
+                            <div class="Content_ContentProduct">
+                                <iframe width="100%" height="560" src="https://www.youtube.com/embed/@Html.Raw(ViewBag.video)?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+
+                            </div>
+                        }
+                      
+                        <div class="Clear"></div>
+                        <div id="Note">
+                            <span>Với khu vực Hà Nội Công Ty Cổ Phần Quốc Tế Sơn Hà áp dụng hình thức lắp đặt miễn phí với sản phẩm Thái dương năng trên mái bằng, với mái nghiêng khách hàng cộng thêm 250.000đ tiền lắp đặt, với sản phẩm bồn nước được kéo miễn phí dưới 10 tầng, không lắp đặt. Để tránh mua phải hàng giả, hàng kém chất lượng khách hàng vui lòng qua trung tâm phân phối của Sơn Hà tại 391 - Nguyễn Xiển - Thanh Xuân - Hà Nội hoặc liên hệ số hotline của công ty dưới chân website !</span>
+                        </div>
+                        <div class="Tabs"> <span>Tags</span> @Html.Raw(ViewBag.chuoitag) </div>
+                    </div>
+
+                    <div id="Comment">
+                        <div class="nVar_2">
+                            <span>Nhận xét đánh giá</span>
+                        </div>
+                        <div id="Sluion">
+                            <div class="Mxh" style="float: left; width: 270px; margin-left: 2px">
+                                <div class="fb-like" data-send="true" data-layout="button_count" data-width="60"
+                                     data-show-faces="true">
+                                </div>
+                                
+                                <div id="g" style="float: left; margin: 7px 5px; height: 15px; width: 20px">
+                                    <g:plusone size="medium"></g:plusone>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="review">
+                            <span class="rv1">Cho điểm chất lượng sản phẩm</span>
+                            <span class="rv2">Mời bạn đánh giá về sản phẩm @Model.Name</span>
+                            <div id="Content_review">
+                                <input type="radio" name="review" value="1" class="rd1" /> <img src="~/Content/Display/iCon/rating_1_rstar.gif" alt="1 điểm" />
+                                <input type="radio" name="review" value="2" class="rd2" /><img src="~/Content/Display/iCon/rating_2_rstar.gif" alt="2 điểm" />
+                                <input type="radio" name="review" value="3" class="rd3" /><img src="~/Content/Display/iCon/rating_3_rstar.gif" alt="3 điểm" />
+                                <input type="radio" name="review" value="4" class="rd4" /><img src="~/Content/Display/iCon/rating_4_rstar.gif" alt="4 điểm" />
+                                <input type="radio" name="review" value="5" class="rd5" /><img src="~/Content/Display/iCon/rating_5_rstar.gif" alt="5 điểm" />
+                            </div>
+                        </div>
+                        <div id="ConmentFacebook"><div class="fb-comments" data-href="@Request.Url.ToString()" data-num-posts="20" style="width:100%; float:left; margin:0px" width="100%"></div></div>
+                    </div>
+                </div>
+            </div>
+            @{Html.RenderAction("RightProductDetail", "Product");}
+
+        </div>
+    }
+    <div class="Clear"></div>
+</div>
+
+<link href="~/Content/Display/Css/colorbox.css" rel="stylesheet" />
+<link rel="stylesheet" href="colorbox.css" />
+<script src="~/Scripts/jquery-2.1.4.min.js"></script>
+<script src="~/Scripts/jquery.colorbox.js"></script>
+<script>
+    $(document).ready(function () {
+        //Examples of how to assign the Colorbox event to elements
+        $(".ajax").colorbox({ rel: 'ajax', innerWidth: 500, innerHeight: 409 });
+        $(".group2").colorbox({ rel: 'group2', transition: "fade" });
+        $(".group3").colorbox({ rel: 'group3', transition: "none", width: "75%", height: "75%" });
+        $(".group4").colorbox({ rel: 'group4', slideshow: true });
+        $(".ajax").colorbox();
+        $(".youtube").colorbox({ iframe: true, innerWidth: 640, innerHeight: 390 });
+        $(".vimeo").colorbox({ iframe: true, innerWidth: 500, innerHeight: 409 });
+        $(".Huongdan").colorbox({ iframe: true, width: "60%", height: "60%" });
+        $(".inline").colorbox({ inline: true, width: "50%" });
+        $(".callbacks").colorbox({
+            onOpen: function () { alert('onOpen: colorbox is about to open'); },
+            onLoad: function () { alert('onLoad: colorbox has started to load the targeted content'); },
+            onComplete: function () { alert('onComplete: colorbox has displayed the loaded content'); },
+            onCleanup: function () { alert('onCleanup: colorbox has begun the close process'); },
+            onClosed: function () { alert('onClosed: colorbox has completely closed'); }
+        });
+
+        $('.non-retina').colorbox({ rel: 'group5', transition: 'none' })
+        $('.retina').colorbox({ rel: 'group5', transition: 'none', retinaImage: true, retinaUrl: true });
+
+        //Example of preserving a JavaScript event for inline calls.
+        $("#click").click(function () {
+            $('#click').css({ "background-color": "#f00", "color": "#fff", "cursor": "inherit" }).text("Open this window again and this message will still be here.");
+            return false;
+        });
+    });
+</script>
+<script>
+    function Hoigia(name) {
+
+        //alert("sdsdsd");
+         _sbzq.push(['expandWidget']);
+         $("textarea_online").html = "";
+        alert(thought);
+         
+        return true;
+    }
+   
+    </script>

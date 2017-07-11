@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    @Html.Raw(ViewBag.Title)
+    @Html.Raw(ViewBag.dcTitle)
+    @Html.Raw(ViewBag.Description)
+    @Html.Raw(ViewBag.dcDescription)
+    @Html.Raw(ViewBag.Keyword)
+    <meta name="geo.region" content="VN-HN" />
+    <meta name="geo.position" content="20.987303;105.806721" />
+    <meta name="ICBM" content="20.987303, 105.806721" />
+    <meta http-equiv="Content-Language" content="vi">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="~/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="~/Content/Display/Css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/Display/Css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Display/Css/Default.css" rel="stylesheet" />
+    <link href="~/Content/Display/Css/Default_Rs.css" rel="stylesheet" />
+    <link href="~/Content/Display/Css/demo.css" rel="stylesheet" />
+    <link href="~/Content/Display/Css/full-slider.css" rel="stylesheet" />
+    <link href="~/Content/Display/Css/jquery.mmenu.all.css" rel="stylesheet" />
+    <link href="~/Content/Display/Css/News.css" rel="stylesheet" />
+    <link href="~/Content/Display/Css/News_Rs.css" rel="stylesheet" />
+    <link href="~/Content/Display/Css/Order.css" rel="stylesheet" />
+    <link href="~/Content/Display/Css/Order_res.css" rel="stylesheet" />
+    <link href="~/Content/Display/Css/Product.css" rel="stylesheet" />
+    <link href="~/Content/Display/Css/Product_RS.css" rel="stylesheet" />
+    <link href="~/Content/Display/Css/baogia.css" rel="stylesheet" />
+    <link href="~/Content/Display/Css/Baogia_Rs.css" rel="stylesheet" />
+    <link href="~/Content/PagedList.css" rel="stylesheet" />
+    <link href="~/Content/Display/Css/colorbox.css" rel="stylesheet" />
+    <script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-27277318-27', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+</head>
+<body>
+    <header>
+        @{Html.RenderAction("HeaderPartial", "Header");}
+    </header>
+
+    <section>
+        <div class="Clear"></div>
+
+        <div id="Main_Content">
+            @RenderBody()
+        </div>
+
+    </section>
+    <div class="Clear"></div>
+    <footer>
+        @{Html.RenderAction("FooterPartial","Footer");}
+
+    </footer>
+    <nav id="menu" style="z-index:1000">
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li>
+                <a href="#about">Giới thiệu</a>
+                <ul>
+                    <li><a href="#about/history">History</a></li>
+                    <li>
+                        <a href="#about/team">The team</a>
+                        <ul>
+                            <li><a href="#about/team/management">Management</a></li>
+                            <li><a href="#about/team/sales">Sales</a></li>
+                            <li><a href="#about/team/development">Development</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
+
+    <script src="~/Content/Display/js/bootstrap.js"></script>
+    <script src="~/Content/Display/js/bootstrap.min.js"></script>
+    <script src="~/Content/Display/js/jquery.js"></script>
+    <script src="~/Content/Display/js/jquery.mmenu.min.all.js"></script>
+    <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 3500 //changes the speed
+    })
+    </script>
+    <script type="text/javascript">
+			$(function() {
+				$('nav#menu').mmenu({
+					extensions	: [ 'effect-slide', 'pageshadow' ],
+					header		: true,
+					searchfield	: true,
+					counters	: true,
+					footer		: {
+						add			: true,
+
+					}
+				});
+			});
+    </script>
+    <script src="~/Scripts/jquery-2.1.4.min.js"></script>
+    <script>
+    window.fbAsyncInit = function () {
+        FB.init({
+            appId: '420131411517908',
+            xfbml: true,
+            version: 'v2.5'
+        });
+    };
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) { return; }
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script src="~/Scripts/jquery.colorbox.js"></script>
+</body>
+</html>

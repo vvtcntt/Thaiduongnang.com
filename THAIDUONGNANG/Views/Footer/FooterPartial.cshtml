@@ -1,0 +1,135 @@
+﻿@model THAIDUONGNANG.Models.tblConfig
+<div id="Footer">
+    <div id="Cate_Footer">
+        <div class="Cate_Ft gioithieu">
+            <div class="nVar_Cate">
+                <span class="Name_Cate">Về chúng tôi</span>
+                <span class="Line_cate"></span>
+            </div>
+            <div class="Content_Cate_Ft">
+                <a href="/2/Gioi-thieu" title="Giới thiệu" rel="nofollow">Giới thiệu về chúng tôi</a>
+                <a href="/2/Tin-tuc" title="Tin tức" rel="nofollow">Tin tức mới</a>
+                <a href="/2/Tu-van-ky-thuat" title="Tư vấn kỹ thuật" rel="nofollow">Tư vấn kỹ thuật</a>
+                <a href="/Lien-he" title="Liên hệ" rel="nofollow">Liên hệ</a>
+                <a href="/Ban-do" title="Bản đồ" rel="nofollow">Bản đồ chỉ dẫn mua hàng</a>
+            </div>
+        </div>
+        <div class="Cate_Ft chinhsach">
+            <div class="nVar_Cate">
+                <span class="Name_Cate">Chính sách dịch vụ</span>
+                <span class="Line_cate"></span>
+            </div>
+            <div class="Content_Cate_Ft">
+                <a href="/quy-trinh-mua-san-pham-thai-duong-nang-son-ha.html" title="Quy trình mua hàng" rel="nofollow">Chính sách mua hàng</a>
+                <a href="/chinh-sach-thanh-toan-mua-thai-duong-nang.html" title="Chính sách thanh toán" rel="nofollow">Chính sách thanh toán</a>
+                <a href="/chinh-sach-bao-hanh-thai-duong-nang-son-ha.html" title="Chính sách bảo hành" rel="nofollow">Chính sách bảo hành</a>
+                <a href="/chinh-sach-van-chuyen-va-giao-hang-thai-duong-nang.html" title="chính sách vận chuyển và lắp đặt" rel="nofollow">Chính sách vận chuyển và lắp đặt</a>
+                <a href="/chinh-sach-bao-mat-thong-tin-khi-mua-thai-duong-nang-son-ha.html" title="chính sách bảo mật thông tin" rel="nofollow">Chính sách bảo mật thông tin</a>
+            </div>
+        </div>
+        <div class="Cate_Ft noibat">
+            <div class="nVar_Cate">
+                <span class="Name_Cate">Sản phẩm nổi bật</span>
+                <span class="Line_cate"></span>
+            </div>
+            <div class="Content_Cate_Ft">
+                @Html.Raw(ViewBag.chuoipd)
+                
+            </div>
+        </div>
+        <div class="Cate_Ft tuvan">
+            <div class="nVar_Cate">
+                <span class="Name_Cate">Bảng báo giá</span>
+                <span class="Line_cate"></span>
+            </div>
+            <div class="Content_Cate_Ft">
+                   @Html.Raw(ViewBag.baogia)
+            </div>
+        </div>
+        <div class="Fanpage">
+            <div class="fb-page" data-href="https://www.facebook.com/@Model.FanpageFacebook;-841943732522244" data-tabs="@Model.FanpageFacebook;" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false" style="height:150px"></div>
+        </div>
+        <div class="Clear"></div>
+    </div>
+    <div class="Clear"></div>
+    <div id="Main_Footer">
+        <div id="Top_Footer">
+            <div id="Left_TopFooter">
+                <a href="/" rel="nofollow" title="Trang chủ"><img class="Logo" src="@Model.ImageLinkLogo" alt="Logo Sơn Hà" title="Logo sơn hà" /></a>
+            </div>
+            <div id="Center_TopFooter">
+                <h4>Công ty cổ phần quốc tế sơn hà</h4>
+                <h3>@Model.Name</h3>
+            </div>
+            <div id="Right_TopFooter">
+                <a href="@Model.BCT" title="Đăng ký bộ cong thương"><img alt="Đăng ký bộ công thương" src="~/Content/Display/iCon/dkbct.png" /></a>
+                <a href="@Model.BNI" title="Chứng nhận BNI"><img alt="Chứng nhận BNI" src="~/Content/Display/iCon/BNI.jpg" /></a>
+                <a href="@Model.SKH" title="Chứng nhận sở kế hoạch đầu tư"><img alt="Chứng nhận sở kế hoạch đầu tư" src="~/Content/Display/iCon/so-ke-hoach-dau-tu.jpg" /></a>
+            </div>
+        </div><div class="Clear"></div>
+       
+        <div class="Clear"></div>
+        <div id="Info_Footer">
+            <div class="Tear_ft">
+                <div class="nVar_Tear_footer">
+                    <span class="name">Danh sách những trung tâm phân phân phối chính hãng của SƠN HÀ</span>
+                    <span class="line"></span>
+                </div>
+                <div class="Tear_ft_1">
+                    <div class="nVar_Tear_ft_1">
+                        <span class="name_ft">Hà Nội <span>(trụ sở chính)</span></span>
+                    </div>
+                    <div class="Content_Tear_ft_1">
+                        <span class="ct_ft">Địa chỉ : <span>@Model.Address</span></span>
+                        <span class="ct_ft">Điện thoại : <span>@Model.MobileIN</span>    </span>
+                        <span class="ct_ft hotline">
+                            Hotline :<span>@Model.HotlineIN</span>
+                    </span>
+                        <span class="ct_ft">Email: <span>@Model.Email
+</span></span>
+                        <span class="Map_ft"><span class="icon"></span> Bản đồ đường đi</span>
+
+                    </div>
+                </div>
+                @Html.Raw(ViewBag.chuoi)
+
+            </div>
+
+
+
+        </div>
+    </div>
+    <div class="Clear"></div>
+    <div id="Maps_Homes">
+        @Html.Raw(ViewBag.maps)
+        <div class="Clear"></div>
+
+    </div>
+    <div class="Clear"></div>
+    <div class="Linkout">
+    @Html.Raw(ViewBag.chuoiurl)<a href="http://thietbivesinhInax.vn" title="Thiết bị vệ sinh">Thiết bị vệ sinh</a> chính hãng với thương hiệu <a href="http://thietbivesinhtoto.vn" title="Thiết bị vệ sinh toto">Thiết bị vệ sinh TOTO</a> hay <a href="http://thietbivesinhcotto.net" title="Thiết bị vệ sinh cotto">Thiết bị vệ sinh cotto</a> giá rẻ !
+    <a class="hides" href="http://thayloilocnuoc.com" title="Thay lõi loc nước">Thay lõi lọc nước</a> chính hãng với <a class="hides" href="http://boluudien.top" title="bộ lưu điện">Bộ lưu điện</a> hay <a class="hides" href="http://binhnonglanh.top" title="Bình nóng lạnh">Bình nóng lạnh</a>
+</div>
+    <div class="Clear"></div>
+    <div id="Dangky">
+        <div id="Autoship">
+            <a href="http://www.dmca.com/Protection/Status.aspx?ID=@Model.DMCA" title="DMCA.com Protection Status" rel="nofollow" class="dmca-badge">
+                <img src="//images.dmca.com/Badges/dmca_protected_sml_120g.png?ID=" alt="DMCA.com Protection Status" />
+            </a>
+            <a href="https://plus.google.com/@Model.Authorship?rel=author"><img src="~/Content/Display/iCon/GoogleAuthorShip.png" alt="Đăng ký google authorShip" /></a>
+        </div>
+    
+        <div class="Clear"></div>
+    </div>
+    <div class="Clear"></div>
+    <div id="Info_Company">
+        <span class="Line_cp"></span>
+        <span class="cp1">
+            Bản quyền © 2015 - Công ty TNHH SEABIG Việt Nam All Rights Reserved.
+        </span>
+        <span class="cp2">Giấy chứng nhận ĐKDN số : 0105956762 Ngày cấp: 30/07/2012</span>
+        <div class="Clear"></div>
+    </div>
+</div>
+ 
+@Html.Raw(Model.CodeChat)

@@ -1,0 +1,47 @@
+﻿@model THAIDUONGNANG.Models.tblConfig
+<div id="wrapper">
+    <div id="Content_wrapper">
+        <div id="Banner">
+            <div id="Left_Banner">
+                <a href="/" title="Trang chủ" rel="nofollow"><img src="@Model.Logo" alt="Logo Thái dương năng" title="Logo Thái dương năng" /></a>
+                <span>@Model.Slogan</span>
+            </div>
+            <div id="Right_Banner">
+                <div id="Support_Top">
+
+                    <ul class="ul_sp">
+                        <li class="sp"><a href="#" title="Hỗ trợ trực tuyến">Hỗ trợ trực tuyến</a></li>
+                        <li class="hl"><a href="#" title="Hotline">Hotline hỗ trợ (24/7) : <span>@Model.HotlineIN</span></a></li>
+                        <li class="face"><a href="https://www.facebook.com/@Model.FanpageFacebook" rel="nofollow" title="Facebook"></a></li>
+                        <li class="gg"><a href="https://plus.google.com/u/0/@Model.Authorship?rel=author" title="Google G+" rel="nofollow"></a></li>
+                        <li class="Maps"><a href="/Ban-do" rel="nofollow" title="Google Maps"></a></li>
+                    </ul>
+
+                </div>
+                <div class="Clear"></div>
+                <div id="Info_Banner">
+                    <h3>Công Ty Cổ Phần Quốc Tế Sơn Hà</h3>
+                    <span class="ht">Hệ thống phân phối sản phẩm trực tiếp từ nhà máy công ty</span>
+                    <a href="#menu" title="Danh mục" class="dm"><span></span>Danh mục sản phẩm</a>
+                </div>
+                <div id="Menu_Banner">
+                    <ul class="ul_1">
+                        <li class="li_1"><a href="/" title="Trang chủ" rel="nofollow">Trang chủ</a></li>
+                        <li class="li_1"><a href="/2/Gioi-thieu" title="Giới thiệu" rel="nofollow">Giới thiệu</a></li>
+                        <li class="li_1"><a href="/2/Tin-tuc" title="Tin tức" rel="nofollow">Tin tức</a></li>
+                        <li class="li_1 sanpham">
+                            <a href="" title="">Sản phẩm</a>
+                            <ul class="ul_2">
+                                @Html.Raw(ViewBag.menu)
+                            </ul>
+                        </li>
+                        <li class="li_1"><a href="/2/Tuyen-dung" title="Tuyển dụng" rel="nofollow">Tuyển dụng</a></li>
+                        <li class="li_1 lienhe"><a href="/Lien-he" title="Liên hệ" rel="nofollow">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "comparePrice";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+ <table border="1px">
+
+     <tr>
+         <td>Mã sản phẩm</td>
+         <td>SEABIG</td>
+        @Html.Raw(ViewBag.chuoilistcompe)
+     </tr>
+     <tr>
+         @Html.Raw(ViewBag.chuoiseabig)
+          @Html.Raw(ViewBag.chuoihienthi)
+     </tr>
+ </table>

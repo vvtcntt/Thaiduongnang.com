@@ -1,0 +1,73 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_LayoutDefault.cshtml";
+}
+@model THAIDUONGNANG.Models.tblConfig
+<div id="Contents">
+    <div class="Root">
+        <a href="/" title="Trang chủ" rel="nofollow"><span class="icon_Homes"></span>Trang chủ</a> / Báo giá
+    </div><div class="Clear"></div>
+    <div id="Baogia">
+        <div id="Head_Top">
+            <div id="Left_Head" style="background:url(@Model.ImageLinkLogo) no-repeat; background-size:100%"></div>
+            <div id="Right_Head">
+                <span class="hd1">@Model.Name</span>
+                <span class="hd2">Địa chỉ: @Model.Address</span>
+                <span class="hd3">Điện thoại: @Model.MobileIN - Hotline : @Model.HotlineIN</span>
+                <span class="hd4">Email : @Model.Email - website: www.Thaiduongnang.com</span>
+            </div>
+            <div class="Clear"></div>
+        </div>
+        <div class="line_bg"></div>
+        <div id="Content_Baogia">
+            <h1>Bảng báo giá @Html.Raw(ViewBag.name)</h1>
+            <span class="date1">Hà Nội, ngày @DateTime.Now.Day tháng @DateTime.Now.Month năm @DateTime.Now.Year</span>
+            <span class="kg">@Model.Name là nhà phân phối chính thức và duy nhất của Tổng Công Ty Cổ Phần Quốc Tế Sơn Hà tại Hà Nội có địa chỉ tại 391 - Nguyễn Xiển - Thanh Xuân - Hà Nội. Chúng tôi xin gửi tới quý khách hàng bảng báo giá sản phẩm @Html.Raw(ViewBag.name) như sau :</span>
+
+            <table border="0" id="Tableb">
+                <tr class="Head_tb">
+                    <td class="Ord">STT</td>
+                    <td class="Name">Tên sản phẩm</td>
+                    <td class="Code">Mã SP</td>
+                    <td class="Price">Đơn giá</td>
+                    <td class="Quality">SL</td>
+                    <td class="SumPrice">Thành tiền</td>
+                    <td class="Image">Hình ảnh</td>
+                </tr>
+                @Html.Raw(ViewBag.chuoi)
+
+            </table>
+            <span class="ghichu_bg">* Ghi chú</span>
+            <span class="ghichu1">- Giá trên đã bao gồm chi phí vận chuyển và lắp đặt miễn phí trên mái bằng tại Hà Nội</span>
+            <span class="ghichu1">- Toàn bộ sản phẩm báo giá là sản phẩm @Html.Raw(ViewBag.name) chính hãng 100%. Nếu khách hàng phát hiện hàng nhái chúng tôi tặng khách hàng 1.000.000 vnđ</span>
+            <span class="ghichu1">- Bảng báo giá trên có giá trị trong tháng @DateTime.Now.Month năm @DateTime.Now.Year. Giá có thể thay đổi mà không báo trước. Khách lấy nhiều vui lòng liên hệ để nhận báo giá tốt hơn !</span>
+            <div class="Clear"></div>
+        </div>
+    </div>
+    <a href="" title="In trang" class="Printer" onclick="printArea('Baogia');"><span class="icon"></span> <span>In trang</span></a>
+    <div class="Clear"></div>
+</div>
+<script language="text/javascript">
+    function printArea(areaName) {
+        var printContents = document.getElementById(areaName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+    }
+</script>
+<script type="text/javascript">
+    function printArea(areaName) {
+        var printContents = document.getElementById(areaName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+    }
+</script>

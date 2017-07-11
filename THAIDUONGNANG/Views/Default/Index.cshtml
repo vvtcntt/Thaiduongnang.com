@@ -1,0 +1,17 @@
+﻿@{
+     Layout = "~/Views/Shared/_LayoutDefault.cshtml";
+}
+@{Html.RenderAction("SlidePartial", "Header");}
+
+@{Html.RenderAction("TuvanPartial", "Default");}
+
+<div id="Main">
+    @Html.Raw(ViewBag.h1)
+    <div id="Content">
+        @{Html.RenderAction("MenuProductHomes", "Default");}
+        @{Html.RenderAction("AdwSale", "Default");}
+        @{Html.RenderAction("ListMenuProductHomes", "Product");}
+        @{Html.RenderAction("NewsHomes", "Default");}
+    </div>
+    <div class="Clear"></div>
+</div>

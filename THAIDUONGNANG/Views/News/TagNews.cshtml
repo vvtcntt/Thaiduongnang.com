@@ -1,0 +1,37 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutDefault.cshtml";
+}
+@using PagedList.Mvc;
+@model PagedList.IPagedList<THAIDUONGNANG.Models.tblNew>
+<div id="Contents">
+    <div class="Clear"></div>
+    <div class="Root">
+        @Html.Raw(ViewBag.nUrl)
+    </div>
+    <div class="Clear"></div>
+    <div id="Products">
+
+        <div class="Clear"></div>
+        <div id="News">
+            <div class="nVar_news">
+                <h1>@Html.Raw(ViewBag.Name)</h1>
+            </div>
+            <div id="LeftNews">
+                @foreach (var item in Model)
+                {
+                    <div class="TearNews">
+                        <a href="/@item.Tag@Html.Raw(".html")" title="@item.Name"><img src="@item.ImageLinkThumb" alt="@item.Name"></a>
+                        <a href="/@item.Tag@Html.Raw(".html")" title="@item.Name" class="Name">@item.Name</a>
+                        <span class="Cata"><span></span>Thời gian gửi: @item.DateCreate</span>
+                        <span class="DessNews">@item.Description</span>
+                    </div>
+                }
+                @Html.PagedListPager(Model, page => Url.Action("TagNews", new { page = page, sortOrder = ViewBag.CurrentSortOrder, sortName = ViewBag.CurrentSortName, sortLevel = ViewBag.CurrentSortLevel }), (PagedListRenderOptions)ViewBag.ship)
+
+
+            </div>
+            @{Html.RenderAction("RightNews", "News");}
+        </div>
+    </div>
+    <div class="Clear"></div>
+</div>

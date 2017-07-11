@@ -1,0 +1,106 @@
+﻿@{
+    ViewBag.Title = "So sánh giá đối thủ";
+    Layout = "~/Views/Shared/_LayoutCompetitor.cshtml";
+}
+<script src="~/Scripts/jquery-2.1.4.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $(".clsPrice").change(function () {
+            var ts = $(this).val();
+            var id = $(this).attr('id');
+            if (ts != "") {
+                $.ajax(
+
+                    {
+                        url: '/ListCompetitor/UpdatePriceText',
+                        type: 'post',
+                        data: { "Code": id, "Price": ts },
+                        dataType: 'json',
+                        success: function (data) {
+                            $(".alert").replaceWith("<div class='alert alert-info'>" + data.result + "</div>");
+                            $(".alert").fadeOut(2000);
+
+                        }
+                    ,
+                        error: function () { }
+                    });
+            }
+            else { }
+
+        });
+
+        $(document).on("click", ".giamgia", function () {
+            //your code
+
+            var getID = $(this).attr('title');
+             //alert(getID);
+
+            $.post("/ListCompetitor/UpdatePrice", { "Code": getID },
+               function (data) {
+
+
+                   $(".alert").replaceWith("<div class='alert alert-info'>" + data.result + "</div>");
+                   $(".alert").fadeOut(5000);
+
+
+
+               });
+            //
+        });
+
+        $(document).on("click", ".refresh", function () {
+            //your code
+            var pass = $(".txtPass").val();
+
+            $.post("/ListCompetitor/Displaycompetitor", { "pass": pass },
+               function (data) {
+
+
+                   $(".alert").replaceWith("<div class='alert alert-info'>" + data.result + "</div>");
+                   $(".alert").fadeOut(5000);
+
+
+
+               });
+            //
+        });
+    })
+</script>
+@model THAIDUONGNANG.Models.tblConfig
+@using (Html.BeginForm())
+{
+<div class="Banner">
+    <div class="Left_Banner">
+        <img src="@Model.ImageLinkLogo" alt="Logo" />
+        <span>@Model.Name</span>
+    </div>
+    <div class="Right_Banner">
+        <span>PHẦN MỀM SO SÁNH GIÁ TỰ ĐỘNG</span>
+    </div>
+</div>
+<div class="Clear"></div>
+ 
+<div class="Clear"></div>
+<div class="Login">
+    @Html.Raw(ViewBag.chuoipass)
+     <a class="refresh" href="" title="Làm mới lại dữ liệu"><img src="~/Content/Display/iCon/view_refresh.png" alt="Làm mới lại dữ liệu" /></a>
+    <p><span></span>   : Giá SEABIG cao hơn giá đối thủ</p>
+    <a href="/ListCompetitor/Displaycompetitor?Download=true" title="" class="export" style="text-align:center; display:block; margin:5px auto"><img src="~/Content/Display/iCon/excell.gif" alt="" /></a>
+
+</div>
+<div class="Clear"></div>
+<table>
+    <tr class="Top">
+        <td class="Ord">STT</td>
+        <td class="Name">Tên sản phẩm</td>
+        <td class="Code">Mã sản phẩm</td>
+        <td class="Name_seabig">SEABIG</td>
+       @Html.Raw(ViewBag.Namecompe)
+    </tr>
+  
+       @Html.Raw(ViewBag.chuoi)
+
+</table>
+<span style="margin:20px auto; font-size:20px ; text-align:center; color:#F00; font-size:14px; display:block">Dữ liệu được cập nhật ngày @DateTime.Now.Day tháng @DateTime.Now.Month năm @DateTime.Now.Year</span>
+}
