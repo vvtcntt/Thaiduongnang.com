@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media screen and (max-width: 768px) 
+{
+	#Contents{ width:100%}
+	#LeftProduct{ width:100%}
+	#RightProduct{ width:100%}
+	.Price_Product .Left_Price_Product{ width:60%}
+	.Price_Product .Right_Price_Product{ width:40%}
+	#Support{ display:none}
+	#MenuProduct{ display:none}
+	#ProductLienquan .Tear_1{ width:31.5%; float:left; margin:5px}
+	.lienhe{ display:none}
+	}
+	@media screen and (max-width: 480px) {
+		#Left_Top_Product{ display:none}
+		#Right_Top_Product{ width:100%; height:auto; margin:0px}
+		#Contents{ margin:5px 0px}
+		#Content_LeftProduct .nVar h1{font-size:15px}
+		.Price_Product .Left_Price_Product{ width:100%}
+		.Price_Product .Right_Price_Product{ width:100%}
+		.Price_Product .Left_Price_Product .Top_Left_Price_Product{ width:100%}
+		.Price_Product .Left_Price_Product .bottom_Left_Price_Product{ width:100%}
+#RightProduct{ display:none}
+.Tear_Product .nVar_Product .Nanme_Product .Right_NameProduct h1{font-size:20px}
+#tb tr td{ width:100% !important; margin:0px}
+#tb1 tr td{ width:100% !important; margin:0px}
+		}

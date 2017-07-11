@@ -1,0 +1,11 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+@media screen and (max-width:768px){#LeftNews{width:98%;height:auto;float:left;margin:0px 5px}
+#RightNews{display:none}
+}
+@media screen and (max-width:488px){ #LeftNews .TearNews img{height:60px;width:60px}
+#News h1{font-size:13px}
+ .Description{font-size:14px}
+.ContentNew{font-size:14px}
+}

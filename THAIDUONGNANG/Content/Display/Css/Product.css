@@ -1,0 +1,163 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+#Contents{ width:1200px; height:auto; margin:155px auto 5px auto; background:#FFF}
+.Root{ width:98%; height:auto;  margin:10px auto; padding:7px 0px}
+.Root a{ color:#525252; font-size:12px; margin:auto 5px; line-height:20px; display:inline-block}
+.Root h1{ color:#525252; font-size:12px; margin:5px 5px; font-weight:normal; display:inline-block }
+.Root a span{ width:16px; height:14px; margin:2px 5px 1px 2px; float:left; background:url(../iCon/home_w.png) no-repeat}
+#Products{ width:98%; height:auto; margin:5px auto}
+#LeftProduct{ width:77%; height:auto; float:left; margin:0px; }
+#Top_Product{ width:100%; height:auto; float:left; margin:0px}
+#Left_Top_Product{ width: 15%; height:auto; float:left; margin:0px}
+#Left_Top_Product a span.bd{margin:5px 9px; float:left;transition: All 500ms ease; width:101px; height:101px; background:url(../iCon/3D.jpg) no-repeat; display:block}
+#Left_Top_Product a span.hd{margin:5px 9px; float:left;transition: All 500ms ease; width:101px; height:101px; background:url(../iCon/HD.jpg) no-repeat; display:block}
+#Left_Top_Product a span.cc{margin:5px 9px; float:left;transition: All 500ms ease; width:101px; height:101px; background:url(../iCon/CN.jpg) no-repeat; display:block}
+#Left_Top_Product a span.vd{margin:5px 9px; float:left;transition: All 500ms ease; width:101px; height:101px; background:url(../iCon/video.png) no-repeat; display:block}
+#Left_Top_Product a span:hover{-webkit-transform: scale(1.1);
+  	-moz-transform: scale(1.1);
+  	-ms-transform: scale(1.1);
+  	-o-transform: scale(1.1);
+  	transform: scale(1.1); }
+#Right_Top_Product{ width:82%; height:460px; margin:5px; float:left; border:1px solid #efeded; border-radius:5px; display:table; table-layout:fixed}
+#Right_Top_Product a{display:table-cell; vertical-align:middle; text-align:center}
+#Right_Top_Product a img{max-width:90%; max-height:460px; margin:5px}
+#Content_LeftProduct{ width:100%; height:auto; float:left; margin:0px}
+#Content_LeftProduct .nVar{ width:100%; height:auto; float:left; margin:10px 0px; padding-bottom:5px; border-bottom:1px solid #efeded}
+#Content_LeftProduct .nVar h1{font-size:25px; text-transform:uppercase; margin:5px 5px 2px 5px;}
+#Content_LeftProduct .nVar span{font-size: 12px;
+  color: #7c7c7c;
+  margin: 3px 8px 3px 8px; }
+#Content_LeftProduct .nVar span span {  color: #ff6000;}
+.Parameter{ width:100%; height:auto; float:left; margin:0px}
+.Nvar1{ width:100%; height:30px; float:left; background:#acacac}
+.Nvar1 .Name_one{ width:auto; height:100%; float:left; background:url(../iCon/bg_var.png) no-repeat right center scroll #d81e13}
+.Nvar1 .Name_one .iCon{ width:20px; height:22px; float:left; margin:4px 6px; background:url(../iCon/icon-sh.png) no-repeat}
+.Nvar1 .Name_one .Name{font-size:14px; margin:auto 5px; line-height:30px; color:#FFF; text-transform:uppercase; padding-right:25px}
+.Content_Parameter{ width:100%; height:auto; float:left; margin:10px 0px}
+.Parameter table{ width:100%; height:auto; float:left; margin:0px}
+.Parameter table tr:nth-child(2n){ background-color:#f5f5f5}
+ 
+.Parameter table tr td{ border-right:1px solid #f1efef;  font-size:13px ;
+}
+.Parameter table tr td:first-child{text-align:center;line-height:26px;text-indent:15px; }
+.Parameter table tr td:last-child{padding:0px 10px; line-height:18px;width:58%}
+.Parameter table tr:last-child{ border-bottom:1px solid #f1efef;width:38%}
+.Advantage{ width:100%; height:auto; float:left; margin:10px 0px}
+.Content_Advan{ width:100%; height:auto; float:left; margin:10px 0px; font-size:13px; line-height:18px; text-align:justify}
+.Content_Advan img{max-width:97%; height:auto; float:left; margin:5px}
+
+.ContentProduct{ width:100%; height:auto; float:left; margin:10px 0px}
+.Content_ContentProduct{ width:100%; height:auto; float:left; margin:10px 0px; font-size:13px; line-height:18px; text-align:justify;
+
+
+                         -moz-user-select: none !important;
+-webkit-touch-callout: none!important;
+-webkit-user-select: none!important;
+-khtml-user-select: none!important;
+-moz-user-select: none!important;
+-ms-user-select: none!important;
+user-select: none!important;
+}
+.Content_ContentProduct img{max-width:97%; height:auto !important;   margin:5px}
+.Content_Image img{max-width:100%; height:auto !important;   margin:0px}
+#Comment{ width:100%; height:auto;
+ float:left;
+ margin:5px 0px}
+  #Comment .nVar_2{ width:95%; height:25px; float:left; margin:0px; background:url(../iCon/comments-icon.png) no-repeat left center scroll transparent; line-height:25px; text-indent:35px;color:#4b4b4b; text-transform:uppercase; font-family:CondensedBold; font-size:16px}
+  #Sluion{ width:100%; height:auto; float:left; margin:0px}
+  #review{ width:100%; height:auto; float:left; margin:0px}
+  #review .rv1{ color:#ff5b02; font-size:13px; margin:5px; display:block}
+#review .rv2{ color:#0a9aff; font-size:12px; margin:2px 5px; display:block; font-style:italic}
+#ConmentFacebook{ width:100%; height:auto; float:left; margin:5px 0px}
+.Price_Product{ width:100%; float:left; background:#fffff2; height:auto; border:1px solid #e7e7e7; border-radius:5px; padding:7px 0px 7px 0px; clear:both; margin-bottom:15px}
+.Price_Product .Left_Price_Product{ width:70%; height:auto; float:left; margin:0px}
+.Price_Product .Left_Price_Product .Top_Left_Price_Product{ width:70%; height:auto; float:left; margin:0px; text-align:left }
+.Price_Product .Left_Price_Product .bottom_Left_Price_Product{ width:30%; height:auto; float:left;  }
+.Price_Product .Left_Price_Product .Pricepd{ font-size:13px; margin:1px 5px; color:#434343; display:block}
+.Price_Product .Left_Price_Product .Pricepd .iCon{ width:12px; height:12px; float:left; background:url(../iCon/icon_1.png); margin:3px 7px 2px 2px}
+.Price_Product .Left_Price_Product .Pricepd span{font-weight:bold}
+.Price_Product .Left_Price_Product .PriceSalepd{ font-size:13px; margin:1px 5px; color:#434343; float:left; width:100%; padding:0px}
+.Price_Product .Left_Price_Product .PriceSalepd .iCon{ width:12px; height:12px; float:left; background:url(../iCon/icon_1.png); margin:7px 7px 2px 2px}
+.Price_Product .Left_Price_Product .PriceSalepd span{font-weight:bold; color:#ff6000; font-family:CondensedBold; font-size:20px; line-height:20px}
+.Price_Product .Left_Price_Product .bottom_Left_Price_Product .btnOrd{width:100px; height:26px; background:#42860b; color:#FFF; border:none; margin:5px}
+.Price_Product .Left_Price_Product .Note{ font-size:11px; margin:1px 5px; color:#434343; display:block; font-style:italic; clear:both}
+.Price_Product .Left_Price_Product .Note span{width:9px; height:8px; background:url(../iCon/red-star.gif); float:left; margin:2px 5px}
+
+.Right_Price_Product{ width:30%; height:auto; float:left; margin:0px}
+.Right_Price_Product a{ font-size:13px; margin:1px 5px; color:#434343; display:block; float:left; width:95%}
+.Right_Price_Product .iCon_mh{ width:11px; height:11px; background:url(../iCon/icon_Online_1.png); float:left; margin:4px 9px 0px 2px}
+
+.Right_Price_Product .iCon_bh{ width:15px; height:16px; background:url(../iCon/icon_Chinh_sach.png); float:left; margin:1px 9px 0px 0px; background-size:100%}
+ 
+
+.Right_Price_Product .iCon_vc{ width:10px; height:13px; background:url(../iCon/icon_Van_chuyen.png); float:left; margin:2px 9px 0px 2px; background-size:100%}
+
+.Right_Price_Product .iCon_tt{ width:13px; height:14px; background:url(../iCon/icon_Price.png); float:left; margin:2px 9px 0px 2px; background-size:100%}#RightProduct{ width:22%; height:auto; margin:0px; border:1px solid #f2f2f2; float:right; }
+#Support{ width:100%; height:auto; float:left ; background:#fafafa}
+#img_Support{ width:100%; height:200px; float:left; background:url(../iCon/ho_tro_vien.png) no-repeat center center scroll transparent;}
+#Contact_Support{ width:100%; height:auto; float:left; margin:5px 0px}
+#Contact_Support .Hotline{ width:100%; margin:0px 0px; color:#ff5a00; font-size:22px; font-family:CondensedBold; line-height:49px}
+#Contact_Support .Hotline span{ width:49px; height:45px; float:left; background:url(../iCon/icon_hotline.png) no-repeat; margin:2px 10px 5px 8px}
+#Contact_Support .Mobile{ width:100%; height:auto; float:left; margin:0px 0px ; font-size:12px; color:#646464; line-height:22px; font-weight:bold}
+#Contact_Support .Mobile span{ width:22px; height:18px; float:left; background:url(../iCon/icon_Phone.png) no-repeat; margin:2px 15px 0px 20px}
+#Contact_Support .Email{ width:100%; height:auto; float:left; margin:0px 0px ; font-size:12px; color:#646464; line-height:17px; font-weight:bold}
+#Contact_Support .Email span{ width:17px; height:12px; float:left; background:url(../iCon/icon_Email.png) no-repeat; margin:2px 15px 0px 22px}
+#Contact_Support .Address{ width:100%; height:auto; float:left; margin:0px 0px ; font-size:12px; color:#646464; line-height:20px; font-weight:bold}
+#Contact_Support .Address span{ width:17px; height:27px; float:left; background:url(../iCon/icon_Dia_Diem.png) no-repeat; margin:2px 15px 0px 22px}
+#ListSupport{ width:100%; height:auto; float:left; margin:5px 0px; background:#fafafa}
+#ListSupport .httt{ font-size:15px; font-family:CondensedBold; text-align:center; margin:5px auto; color:#ff4e00; display:block; text-transform:uppercase}
+#ListSupport .Line_Buttom { width:100%; height:6px; background:url(../iCon/line-buttom.png) no-repeat center center scroll transparent; float:left}
+#ListSupport .Tear_Supports{ width:100%; height:auto; float:left; margin:5px 0px; background:url(../iCon/line-1.png) no-repeat center bottom scroll transparent; padding-bottom:10px}
+#ListSupport .Tear_Supports .Left_Tear_Support{ width:50%; height:auto; float:left; margin:0px}
+#ListSupport .Tear_Supports .Left_Tear_Support .htv1{ color:#393939; margin:4px 5px 2px 5px; text-align:right; display:block}
+#ListSupport .Tear_Supports .Left_Tear_Support .htv2{ color:#ff3600; margin:4px 5px; text-align:right; display:block}
+#ListSupport .Tear_Supports .Right_Tear_Support{ width:50%; height:auto; float:left; margin:0px}
+#ListSupport .Tear_Supports .Right_Tear_Support .imgYahoo{ width:auto; height:auto; float:left; margin:5px 5px 2px 5px; display:block}
+#ListSupport .Tear_Supports .Right_Tear_Support .imgSkype{ width:76px; height:auto; float:left; margin:0px 3px; display:block}
+#MenuProduct{ width:100%; height:auto; float:left; margin:7px 0px; background:#fafafa}
+.nVar_Left{ width:100%; height:auto; margin:0px; background:url(../iCon/line-buttom.png) no-repeat  bottom center scroll transparent; padding-bottom:7px}
+ .nVar_Left span{   text-align:center; display:block;font-size:15px; font-family:CondensedBold; text-align:center; margin:5px auto;   color:#ff4e00;  text-transform:uppercase}
+#MenuProduct #Content_MenuProduct{ width:100%; height:auto; float:left; margin:0px}
+#MenuProduct #Content_MenuProduct a{ font-size:15px; margin:3px 7px 2px 10px; display:block; color:#595959; font-family:Condensed }
+#ProductLienquan{ width:100%; height:auto; float:left; margin:7px 0px; background:#fafafa}
+#ProductLienquan .Tear_1{ width:90%; height:auto; margin:3px auto; display:block; float:none; background:#FFF}
+
+.Des{width:100%; height:auto; float:left; margin:0px; border:1px  ;  background: #fffff2;
+   
+    border: 1px solid #e7e7e7; font-size:13px; text-align:justify; color:#434343; padding:7px 0px; margin:7px 0px; border-radius:5px}
+	.Content_des{width:97%; margin:5px auto}
+	.Tear_Product .nVar_Product .Nanme_Product .Right_NameProduct h1{ font-size:26px; line-height:50px; margin:auto 20px auto 15px; display:block; font-weight:normal}
+    	.Tear_Product .nVar_Product .Nanme_Product .Right_NameProduct span{ font-size:26px; line-height:50px; margin:auto 20px auto 15px; display:block; font-weight:bold; display:inline-block}
+
+		.Tear_Product .nVar_Product .Nanme_Product .Right_NameProduct h2{ font-size:26px; line-height:50px; margin:auto 20px auto 15px; display:block; font-weight:normal; color:#3e3e3e}
+            .Tear_Product .nVar_Product .Nanme_Product .Right_NameProduct h2 a {
+                color: #3e3e3e;
+            }
+.Nvar_h1{width:100%; height:auto; float:left; margin:10px 0px; position:relative }
+ .Nvar_h1 span{width:20px; height:22px; float:left; background:url(../iCon/icon_sonha.png); margin:5px 12px 5px 5px}
+.Nvar_h1 h1{   background:#FFF;  font-size:25px; color:#d11400; margin:5px; z-index:100; line-height:20px ; text-transform:uppercase }
+#tb{ width:100%; height:auto; float:left; margin:5px 0px; border:0px; position:relative}
+#tb tr{  position:relative; width:100%; float:left; display:table; table-layout:fixed; margin-bottom:6px}
+#tb tr td{width:48%; float:left}
+#tb tr td:first-child{ margin-right:7px}
+#tb tr td:last-child{ margin-left:7px; float:right}
+#tb tr td img{ float:left; margin:3px; max-width:80px; margin-right:20px; height:auto !important}
+#tb tr h4{ color:#d81e13; margin:3px 0px}
+#tb1{ width:100%; height:auto; float:left; margin:5px 0px; border:0px; position:relative}
+#tb1 tr{  position:relative; width:100%; float:left; height:100%;margin-bottom:0px}
+#tb1 tr td{ float:left; margin:0px}
+#tb1 tr td img{ float:left; margin:3px; max-width:100px; margin-right:20px; height:auto !important}
+#tb1 tr td h4{ color:#d81e13; margin:3px 0px; font-size:22px; font-family:Condensed; text-transform:uppercase}
+#tb1 tr td:first-child{ width:14%; margin-right:15px}
+ #tb1 tr td:last-child{ width:80%; float:left}
+ #Note{ width:85%; height:auto; margin:8px auto; display:block; background:url(../iCon/iconChuY.png) no-repeat left center scroll #fefde8; background-position:5px; min-height:40px; padding:5px}
+  #Note span{ font-size:12px; margin:5px 5px 5px 25px; text-align:center; display:block; color:#5c5c5c}
+#tb2{ border:none;border-right:none; border-bottom:none; width:100% !important }
+#tb2 tr{ min-height:25px; line-height:26px}
+#tb2 td{text-indent:10px}
+#tb2 td:first-child{ font-weight:bold}
+#tb2 tr:nth-child(2n){ background-color:#f5f5f5}
+#tb2 tr:first-child{ text-align:center; text-transform:uppercase; line-height:25px; background:#5f5f5f; font-weight:normal !important; font-weight:bold !important; color:#FFF}
+
+ 

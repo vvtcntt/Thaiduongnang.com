@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media screen and (max-width: 768px) 
+{
+#Right_TopFooter{ display:none}
+#Center_TopFooter{ width:98%;}
+#Top_Footer{ height:auto}
+#Left_TopFooter{ width:100%}
+#wrapper #Banner{ width:100%}
+#Info_Banner span{ font-size:11px}
+#Footer #Main_Footer .Logo{ margin:5px auto}
+#wrapper #Banner #Left_Banner img{ width:70%}
+#wrapper #Banner #Left_Banner span{font-size:20px}
+#Menu_Banner ul li a{margin:5px}
+#wrapper #Content_wrapper{ height:100px}
+#wrapper #Banner #Right_Banner #Support_Top{ display:none}
+#wrapper #Banner #Left_Banner img{ margin-top:20px}
+#Content_Tuvan{ width:100%; float:left}
+#Content_Tuvan #Left_Content_Tuvan .tv1{ font-size:18px}
+#Content_Tuvan #Left_Content_Tuvan .tv2{ font-size:11px}
+#Right_Content_Tuvan #l_Left_Content_Tuvan{ margin-left:10px; width:60%}
+#l_Right_Content_Tuvan a{ font-size:10px; text-align:center; margin-top:20px}
+#Right_Content_Tuvan #l_Left_Content_Tuvan .l1{ font-size:12px}
+#l_Right_Content_Tuvan{ margin-left:5px; width:35%; overflow:hidden}
+#Right_Content_Tuvan #l_Left_Content_Tuvan #txtOrd1{ margin-left:10px}
+#Right_Content_Tuvan #l_Left_Content_Tuvan .l3{ font-size:9px}
+#l_Right_Content_Tuvan a span{ line-height:20px}
+#Main{ width:100%}
+#Content{ width:98%; margin:0px auto; float:none}
+#ListMenuProduct .Tear_Mn{ width:31.5%}
+.Content_TearProduct .Adw_Product{ width:100%; margin:5px 0px}
+.Content_TearProduct .Content_Product{ width:100%}
+#Content_NewsHomes #Center_NewHomes{ display:none}
+#Content_NewsHomes #Left_NewHomes{ width:48%; margin-right:2%}
+#Content_NewsHomes #Right_NewHomes{ width:50%}
+.Cate_Ft{ width:31.5%}
+#Cate_Footer{ width:98%}
+.tuvan{ display:none}
+.Fanpage{ display:none}
+#Cate_Footer{ width:98%}
+#Footer #Main_Footer{ width:100%}
+.Tear_ft_1{ width:31.7%}
+.Tear_ft_1 .nVar_Tear_ft_1 .name_ft{ font-size:13px}
+#Maps_Homes{ width:98%}
+#Dangky{ width:98%}
+#Info_Company{ width:98%}
+.Tear_1{ width:31% !important}
+#Menu_Banner ul li a{ font-size:10px}
+.lienhe{ display:none}
+#Content_Slide{ width:100%}
+#btnxem{ margin:10px 0px}
+ }
+@media screen and (max-width: 480px) 
+{#wrapper #Banner{ width:98%}
+	#wrapper #Banner #Left_Banner{ width:100%}
+	#wrapper #Banner #Left_Banner img{ margin:5px auto; display:block}
+	#wrapper #Banner #Left_Banner span{ text-align:center}
+	#wrapper #Banner #Left_Banner span{ font-size:25px}
+	#wrapper #Content_wrapper{ height:auto}
+	#wrapper #Banner #Right_Banner{ width:100%}
+	#Info_Banner span{ text-align:center}
+	#Menu_Banner{ display:none}
+	#Info_Banner h3{ margin-top:5px; text-align:center}
+	#Info_Banner{ margin-bottom:10px; text-align:center}
+	#wrapper #Content_wrapper{position:relative}
+	#Slide{ display:none}
+	#wrapper{ height:auto}
+	#Tuvan{ display:none}
+	#ListMenuProduct h3{ font-size:14px}
+	#ListMenuProduct .Tear_Mn{ width:46%}
+	.Tear_Product .nVar_Product .Nanme_Product .Right_NameProduct span{font-size:16px}
+	.Tear_1{ width:46% !important}
+	.Tear_1 .box_Price .Left_box_Price{ width:100%; display:none}
+	.Right_box_Price{ width:100%}
+	.Tear_1 .box_Price .Price_ghichu{ text-align:center; margin:3px}
+	.Tear_1 .box_Price .PriceSale{ text-align:center; font-size:15px; margin:3px}
+	.Tear_1 .box_Price .Price{ text-align:center; font-size:12px; margin:1px}
+	.Tear_1 .box_Price .PriceSale_ghichu{ text-align:center; margin:1px}
+	#nVar_NewsHomes #Name_Newhomes span{ font-size:20px}
+	#News_Homes{ display:none}
+	.noibat{display:none}
+	.Cate_Ft{ width:46%}
+	#Footer #Main_Footer h4{ font-size:16px}
+	#Footer #Main_Footer h3{ font-size:15px}
+	.Tear_ft .nVar_Tear_footer .name{ font-size:14px}
+	.Tear_ft_1{ width:100%; margin:5px 0px}
+	#Maps_Homes{display:none}
+#Dangky{ display:none}
+.dm{ display:block}
+#Info_Banner span.ht{ display:none}
+#ListMenuProduct{ display:none}
+#Sale{ margin:0px}
+	
+}

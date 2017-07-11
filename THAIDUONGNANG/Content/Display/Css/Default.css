@@ -1,0 +1,320 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body { 
+    font: 12px arial;
+    margin: 0;
+    padding: 0;
+	background:#f7f6f6 !important 
+	 
+	}
+ul,li{ padding:0px; margin:0px; outline:0px; vertical-align:baseline; border:0px}
+
+ul,li{ list-style:none}
+a{text-decoration:none}
+a:hover{color:#fa8e00 !important;text-decoration:none !important} 
+img { border:none}
+.Clear{ clear:both}
+@font-face { 
+font-family:UTM_Sarah; 
+src:url(../Fonts/UTM_Sarah.ttf)
+}
+@font-face { 
+font-family:Condensed; 
+src:url(../Fonts/UTM-Swiss-Condensed.ttf)
+}
+@font-face { 
+font-family:CondensedBold; 
+src:url(../Fonts/UTM-Swiss-CondensedBold.ttf)
+}
+.h1{ font-size:2px; opacity:0.5; margin:0px; color:#FFF; float:left}
+section{ width:100%; height:auto; float:left; padding:0px}
+header{width:100%; float:left; padding:0; margin:0}
+#wrapper{ width:100%; height:auto; float:left; margin:0px; position:relative}
+#Slide{ width:100%; height:610px; margin:0px; float:left;}
+#Content_Slide{ width:1200px; height:100%; margin:0px auto}
+#Slide img{ width:100%; height:100%; float:left; margin:0px}
+#wrapper #Content_wrapper{ width:100%; height:140px; margin:0px ;  position:fixed;background: rgba(255, 255, 255, 0.7);
+    -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.24); z-index:1}
+#wrapper #Banner{ width:1200px; height:100%; margin:0px auto;}
+#wrapper #Banner #Left_Banner{ width:40%; height:100%; float:left; margin:0px}
+#wrapper #Banner #Left_Banner img{ margin:28px 5px 5px 15px; display:block; width:300px; height:auto}
+#wrapper #Banner #Left_Banner span{margin:5px 5px 5px 15px; color:#000; font-family:UTM_Sarah; display:block; font-size:30px; line-height:20px}
+#wrapper #Banner #Right_Banner{ width:60%; height:100%; float:left; margin:0px}
+#wrapper #Banner #Right_Banner #Support_Top{ width:auto; height:38px; float:right; text-align:right; background: -webkit-linear-gradient(top, rgba(245, 245, 245, 1) 0%, rgba(229, 229, 229, 1) 100%);;  border-bottom-left-radius: 20px;    border-bottom-right-radius: 20px;}
+#wrapper #Banner #Right_Banner #Support_Top .ul_sp{width:100%; height:auto; float:left; margin:0px}
+#wrapper #Banner #Right_Banner #Support_Top .ul_sp li{ float:left; margin:0px; height:100%}
+#wrapper #Banner #Right_Banner #Support_Top .ul_sp li a{ color:#000; font-size:13px; line-height:38px; display:block; margin:auto 15px}
+#wrapper #Banner #Right_Banner #Support_Top .ul_sp .sp{ margin-left:10px; border-right:1px solid #d2d1d1}
+#wrapper #Banner #Right_Banner #Support_Top .ul_sp .hl{ border-left:1px solid #FFF;border-right:1px solid #d2d1d1}
+#wrapper #Banner #Right_Banner #Support_Top .ul_sp .hl span{ font-weight:bold; color:#ff4e00}
+#wrapper #Banner #Right_Banner #Support_Top .ul_sp .face{ border-left:1px solid #FFF;line-height:38px ; opacity:0.7}
+#wrapper #Banner #Right_Banner #Support_Top .ul_sp .face a{ width:7px; height:17px; float:left; display:block; background:url(../iCon/icon_face.png) no-repeat; margin:11px 5px 5px 15px}
+#wrapper #Banner #Right_Banner #Support_Top .ul_sp .gg{ line-height:38px; opacity:0.7}
+#wrapper #Banner #Right_Banner #Support_Top .ul_sp .gg a{ width:17px; height:15px; float:left; display:block; background:url(../iCon/icon_G.png) no-repeat; margin:12px 3px 5px 5px}
+#wrapper #Banner #Right_Banner #Support_Top .ul_sp .Maps{ line-height:38px; opacity:0.7}
+#wrapper #Banner #Right_Banner #Support_Top .ul_sp .Maps a{ width:10px; height:16px; float:left; display:block; background:url(../iCon/icon_Maps.png) no-repeat; margin:11.2px 20px 5px 5px}
+#wrapper #Banner #Right_Banner #Support_Top .ul_sp li:hover{opacity:1}
+#Info_Banner{ width:100%; height:auto; float:left; text-align:right}
+#Info_Banner h3{ font-size:19px; color:#252525; text-transform:uppercase; margin:10px 5px 5px 5px; font-family:Condensed}
+#Info_Banner span{ display:inline-block; background:#bc0b03; color:#FFF; padding:3px 10px; text-transform:uppercase; font-size:13px}
+#Menu_Banner{ width:100%; height:auto; float:right; margin:10px 0px 0px 0px; text-align:right}
+#Menu_Banner ul{ float:right}
+#Menu_Banner ul li.li_1{ float:left; position:relative}
+#Menu_Banner ul li.li_1 a{ font-size:13px; color:#000; margin:5px 10px; display:block }
+
+#Menu_Banner ul li.li_1:hover{ background:url(../iCon/bg_menu.png) repeat-x left center scroll transparent; border-radius:5px}
+#Menu_Banner ul li.li_1 ul{width:170px; height:auto; float:left; position:absolute; background:rgba(255, 255, 255, 0.7); border:1px solid #e2e2e2; border-top:none; display:none}
+#Menu_Banner ul li.li_1:hover .ul_2{display:block}
+#Menu_Banner ul li.li_1 .ul_2 li{ border-bottom:1px dashed #e2e2e2; position:relative;}
+#Menu_Banner ul li.li_1 .ul_2 li:first-child{margin-top:15px}
+#Menu_Banner ul li.li_1 .ul_2 li a{ text-align:left; margin:5px 5px; font-size:13px}
+#Menu_Banner ul li.li_1 .ul_2 li .ul_3{ width:170px; float:left ; margin:-28px 0px 0px 168px; display:none}
+#Menu_Banner ul li.li_1 .ul_2 li:hover .ul_3{display:block}
+#Menu_Banner ul li.li_1 .ul_2 li .ul_3 li{ margin:0px}
+.dm{ width:100#; padding:3px 10px; display:block; background:#0691cb; color:#FFF; text-align:center; display:none}
+.dm span{ width:12px; height:12px; background:url(../iCon/iconMenu.png) !important; display:inline-block; margin:auto 15px auto 5px}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section{ width:100%; height:auto; float:left; margin:0}
+#Main{ width:1200px; height:auto; margin:0px auto; background:#FFF}
+#Content{ width:1180px; height:auto; margin:0px 10px}
+ #Tuvan{ width:100%; float:left; height:89px; float:left; margin:0px; position:relative}
+ #Left_Tuvan{ width:50%; height:100%; float:left; background:url(../iCon/bg_Tuvan.png) no-repeat right center scroll #faf9f9}
+ #Right_Tuvan{ width:50%; height:100%; float:left; background:#eeeeee; margin:0}
+ #Main_Tuvan{ width:100%; height:100%; position:absolute; float:left; margin:0}
+  #Content_Tuvan{ width:1200px; height:100%; margin:0px auto}
+  #Content_Tuvan #Left_Content_Tuvan{ width:50%; height:100%; float:left; margin:0px}
+#Content_Tuvan #Left_Content_Tuvan .tv1{ font-size:25px; text-transform:uppercase; margin:20px 5px 5px 5px; color:#0691cb; display:block}
+#Content_Tuvan #Left_Content_Tuvan .tv2{ font-size:15px; margin:5px 7px; display:block}
+#Right_Content_Tuvan{ width:50%; height:100%; float:left; margin:0px}
+#Right_Content_Tuvan #l_Left_Content_Tuvan{ width:auto; float:left; margin:0px 0px 0px 70px}
+#Right_Content_Tuvan #l_Left_Content_Tuvan .l1{font-size:15px; margin:10px 5px 5px 5px; display:block; font-weight:bold}
+#Right_Content_Tuvan #l_Left_Content_Tuvan input{ width:40px; height:24px; background-color:transparent; border:1px solid #c5c5c5; border-radius:5px; margin:3px 5px 3px 10px; display:inline-block; text-align:center}
+#Right_Content_Tuvan #l_Left_Content_Tuvan #txtOrd1{margin-left:30px}
+#Right_Content_Tuvan #l_Left_Content_Tuvan .l2{font-size:12px; font-style:italic; margin-left:10px}
+#Right_Content_Tuvan #l_Left_Content_Tuvan .l3{font-size:10px; margin:2px 5px 5px 5px; display:block; color:#515151; font-style:italic}
+  #btnxem{ width:auto;  display:block; float:left; border:none; background:#0285c2; border-radius:4px; margin:30px 5px; color:#FFF; padding:5px 8px; vertical-align:middle; display:table-cell}
+#l_Right_Content_Tuvan{ width:auto; float:right; margin:0px 0px 0px 40px; display:table; table-layout:fixed }
+#l_Right_Content_Tuvan a{  font-size:16px; color:#FFF; display:block; margin:0px 5px}
+#l_Right_Content_Tuvan a span{background:#034c6a; padding:5px 10px; border-radius:5px}
+#ListMenuProduct{ width:100%; height:auto; float:left; margin:15px 0px}
+#ListMenuProduct h3{ font-size:25px; text-align:center; margin:15px 5px}
+#ListMenuProduct .Tear_Mn{ width:19.1%; margin:5px; float:left; height:auto}
+#ListMenuProduct .Tear_Mn h2{ font-size:13px; background:#0691cb; width:100%; margin:0px; color:#FFF; text-transform:uppercase; text-align:center; font-weight:normal; height:26px; line-height:26px}
+#ListMenuProduct .Tear_Mn h2 span{ background:#ff4f00; font-weight:bold;   display:inline-block; padding: 0px 5px; line-height:26px; float:right}
+#ListMenuProduct .Content_Tear_Mn{ width:99%; height:auto; float:left; margin:8px 0px 0px 0px; border:1px solid #ebebeb; border-radius:5px; display:table; table-layout:fixed;-webkit-transition: all 0.7s ease; transition: all 0.7s ease;}
+#ListMenuProduct .Content_Tear_Mn a{ display:table-cell; vertical-align:middle; text-align:center}
+#ListMenuProduct .Content_Tear_Mn a img{ max-width:80%; height:auto; margin:15px 0px;}
+#ListMenuProduct .Content_Tear_Mn:hover{ border-radius:50%}
+.Tear_Mn  .Infos{width:99%; height:auto; float:left; margin:0px}
+.Tear_Mn .Infos .TopInfo{ width:20px; height:22px; background:url(../iCon/tamgiac.png) no-repeat left center scroll #FFF; margin:0px auto 0px 20px; position:absolute}
+.Tear_Mn .Infos .Content_Info{ border:1px solid #ececec; margin: 20px 0px 0px 0px; width:100%; height:auto; border-radius:5px; padding:5px 0px 7px 0px; background:#faf9f9; font-size:11px; color:#646464}
+.Tear_Mn .Infos .Content_Info .ud{ font-size:13px; font-weight:bold; color:#ff4f00; font-weight:bold; margin:5px 5px 7px 5px; display:block}
+.Tear_Mn .Infos .Content_Info p{ margin:3px}
+ .Tear_Mn:hover{ background:#fffff2}
+.Tear_Mn:hover .Content_Tear_Mn{ background:#FFF; overflow:hidden}
+.Tear_Mn:hover .Content_Info{ background:#fffff2}
+.Tear_Mn .Infos .Content_Info .ct{ width:auto; margin:0px 7px}
+#Main_Content{ width:100%; height:auto; float:left; margin:0px 0px; background:url(../iCon/bg-body.jpg);    background-attachment: fixed;
+    position: relative;}
+#Sale{ width:100%; height:auto; float:left; margin:10px 0px}
+#Sale img{ float:left; margin:0px; width:100%; height:auto}
+#Product{ width:100%; height:auto; float:left; margin:10px 0px}
+#Product .Tear_Product{ width:100%; height:auto; float:left; margin:10px 0px}
+.Tear_Product .nVar_Product{ width:100%; height:50px; float:left; position:relative}
+.Tear_Product .nVar_Product .hrpd{ width:100%; height:0px; background-color: transparent; border-bottom:1px solid #9b9b9b; margin:30px 0px 0px 0px}
+.Tear_Product .nVar_Product .Nanme_Product{ width:auto; height:100%; float:left; position:absolute; background:#FFF}
+.Tear_Product .nVar_Product .Nanme_Product .Left_NameProduct{ width:50px; height:50px; border:1px solid #9b9b9b; border-radius:50%; float:left; line-height:50px; font-size:30px; text-align:center}
+.Tear_Product .nVar_Product .Nanme_Product .Right_NameProduct{ width:auto; float:left; margin:0px}
+.Tear_Product .nVar_Product .Nanme_Product .Right_NameProduct span{ font-size:26px; line-height:50px; margin:auto 20px auto 15px; display:block}
+.Content_TearProduct{ width:100%; height:auto; float:left; margin:5px 0px}
+.Content_TearProduct .Adw_Product{ width:40%; height:auto; float:left; margin:0px}
+.Content_TearProduct .Adw_Product img{ width:100%; height:auto; float:left; margin:5px 0px; padding:0px}
+.Content_TearProduct .Content_Product{ width:58%; height:auto; float:right; margin:0px; }
+.Tear_1 .Top{ width:100%; height:210px; float:left; margin:0px 0px 0px 0px; position:relative}
+ 
+.Tear_1{ width:31.8%; height:auto; float:left; margin:5px}
+.ListProducts .Tear_1{ width:19%; height:auto; float:left; margin:5px}
+.ListProducts .Content_Product{ width:100%; height:auto; float:right; margin:0px; }
+.Tear_1 .Img{ width:100%; height:100%; float:left; margin:0px; display:table; vertical-align:middle; border:1px solid #ebebeb; border-radius:5px; table-layout:fixed}
+.Tear_1 .Img a{ display:table-cell; vertical-align:middle; text-align:center}
+.Tear_1 .Img a img{ width:auto; max-width:85%; max-height:90%;    transition: All 500ms ease;}
+.Tear_1 .Img a img:hover{-webkit-transform: scale(1.1);
+  	-moz-transform: scale(1.1);
+  	-ms-transform: scale(1.1);
+  	-o-transform: scale(1.1);
+  	transform: scale(1.1); }
+.Tear_1 .Top .lit{ width:45px; height:30px; background:#0691cb; position:absolute;   color:#FFF; font-size:13px; text-align:center; line-height:30px; bottom:0px; right:0px; text-transform:uppercase; margin-right:1px;
+
+    border-top-left-radius: 20px;
+	 border-bottom-right-radius: 5px; z-index:10}
+.Tear_1:hover  .Info{ background:#fffcf7}
+.Info{ width:100%; height:auto; float:left; margin:0px;  border:1px solid #ebebeb; border-top:none }
+.Info .Name{font-size:15px;  color:#000; margin:5px 5px 2px 5px; text-align:center; display:block}
+.Info h3{margin:0px; font-weight:normal}
+.Info .ph{ font-size:12px; font-style:italic; text-align:center; display:block; color:#656565; margin:2px 5px}
+.Info .ph span{   color:#000}
+.Tear_1  .box_Price{ width:100%; height:auto; float:left; margin:0px}
+.Tear_1  .box_Price .Left_box_Price{ width:40%; height:auto; float:left; margin:0px}
+.Right_box_Price{ width:60%; height:auto; float:left; margin:0px}
+.Tear_1  .box_Price  .Price_ghichu{ font-size:11px; margin:5px; display:block; text-align:left; font-weight:bold}
+.Tear_1  .box_Price  .PriceSale_ghichu{ font-size:11px; margin:5px 5px 1px 5px; display:block; text-align:right; font-weight:bold}
+.Tear_1  .box_Price .Price{ font-size:13px; margin:  5px; display:block}
+.Tear_1  .box_Price .PriceSale{ font-size:17px; margin:2px 5px; display:block; text-align:right; color:#ff3d00; font-family:CondensedBold; line-height:17px}
+#News_Homes{ width:100%; height:auto; float:left; margin:30px 0px 10px 0px}
+#nVar_NewsHomes{ width:100%; height:50px; float:left; margin:0px; position:relative}
+#nVar_NewsHomes #Name_Newhomes{  position:absolute; text-align:center; height:100%; width:100%}
+#nVar_NewsHomes #Name_Newhomes span{text-align:center; line-height:50px; background:#FFF; display:inline-block;  font-size:30px; padding:0px 20px; text-transform:uppercase}
+#hrn{ width: 100%;
+    height: 0px;
+    background-color: transparent;
+    border-bottom: 1px solid #9b9b9b;
+    margin:24px 0px}
+
+#Content_NewsHomes{ width:100%; height:auto; float:left; margin:10px 0px}
+#Content_NewsHomes #Left_NewHomes{ width:30%; height:auto; float:left; margin:8px 0px 0px 0px}
+#Content_NewsHomes #Center_NewHomes{ width:40%; height:auto; float:left; margin:0px}
+#Content_NewsHomes #Right_NewHomes{ width:30%; height:auto; float:left; margin:0px}
+#Content_NewsHomes #Right_NewHomes #Content_Right_NewHomes{ width:100%; height:auto; float:left; margin:10px 0px 0px 0px}
+#Content_NewsHomes #Right_NewHomes .Tear_NewsHomes{ width:100%; height:auto; float:right; margin:2px 0px}
+#Content_NewsHomes #Right_NewHomes .Tear_NewsHomes img{width:50px; height:50px; border-radius:5px; float:left; margin:5px 10px 5px 5px}
+#Content_NewsHomes #Right_NewHomes .Tear_NewsHomes a{ font-size:13px;   margin:5px 5px 0px 5px; display:block}
+#Content_NewsHomes #Right_NewHomes .Tear_NewsHomes span{font-size:10px; color:#a5a5a5; font-style:italic; margin:2px 5px; display:block}
+.Top_Web{ width:95%; height:35px;   margin:0px auto}
+.Top_Web span{font-size:16px; text-transform:uppercase; color:#257abc; font-family:CondensedBold; display:inline-block; margin:0px 7px; line-height:35px}
+.Top_Newshomes{ width:95%; height:35px;   margin:0px auto}
+.Top_Newshomes span{font-size:16px; text-transform:uppercase; color:#257abc; font-family:CondensedBold; display:inline-block; margin:0px 7px; line-height:29px}
+.Top_Web span span.iconweb{ display:inline-block; margin:0px 10px 0px 0px; width:35px; height:35px; background:url(../iCon/icon_webs.png) no-repeat; float:left}
+.Top_Newshomes span span.iconnews{ display:inline-block; margin:0px 10px 0px 0px; width:33px; height:29px; background:url(../iCon/icon_News.png) no-repeat; float:left}
+.Content_Center_NewHomes{ width:95%; height:35px;   margin:5px auto}
+.Content_Center_NewHomes .ul1{ width:100%; height:auto; float:left}
+.Content_Center_NewHomes .ul1 .li1{ float:left;display:block; width:49%}
+.Content_Center_NewHomes .ul1 .li1 a{font-size:14px; font-weight:bold; margin:5px; display:block; color:#f2706d }
+.Content_Center_NewHomes .ul1 .li1 .ul2{    padding: 2px 0px 0px;
+    list-style: outside none none;
+    margin-left: 10px;
+    border-left: 1px solid #555C62;
+    line-height: 15px;}
+.Content_Center_NewHomes .ul1 .li1 .ul2 li:before {
+    content: "-";
+    color: #555c62;
+	float:left; 
+}
+.Content_Center_NewHomes .ul1 .li1 .ul2 li a{    padding-left: 5px;
+    color: #232323; font-size:12px; font-weight:normal}
+
+footer{ width:100%; height:auto; float:left  }
+#Footer{ width:100%; float:left; margin:30px 0px 0px 0px; background:#FFF}
+#Footer #Main_Footer{ width:1200px; height:auto; margin:0px auto}
+#Footer #Main_Footer .Logo{ width:220px; height:auto; margin:15px auto 5px auto; display:block}
+#Footer #Main_Footer h4{ font-size:26px; text-transform:uppercase; text-align:center; margin:18px 5px 2px 5px; color:#c40400; font-weight:normal}
+#Footer #Main_Footer h3{ font-size:18px; text-transform:uppercase; text-align:center; margin:2px 5px; color:#257abc; font-weight:normal; font-family:CondensedBold}
+#Chinhanh{ width:100%; height:auto; float:left; margin:5px; background:#f5f2f2}
+#Info_Footer{ width:100%; height:auto; float:left; margin:5px 0px}
+#Info_Footer .dc{font-size:18px; font-weight:bold; text-align:center; display:block; margin:5px auto 30px auto; background:#c40400; padding:3px 10px; display:inline-block; color:#FFF}
+.Tear_ft{ width:100%; height:auto; float:left; margin:5px 0px}
+.Tear_ft .nVar_Tear_footer{ width:100%; height:auto; float:left; margin:0px}
+.Tear_ft .nVar_Tear_footer .name{
+font-size: 16px;
+    
+    text-transform: uppercase;
+    display: block;
+	text-align:center;
+     color: #383838;
+	 font-weight:bold
+}
+.Tear_ft .nVar_Tear_footer .line{
+    width: 100%;
+    height: 10px;
+    background: url(../iCon/bottoms_list.gif) no-repeat center center scroll transparent;
+    float: left;
+    margin: 5px 0px 1px 0px;
+	
+}
+.Tear_ft_1{width:24.1%; height:auto; float:left; margin:5px 5px 2px 5px; border-bottom:1px dashed #e8e5e5}
+.Tear_ft_1 .nVar_Tear_ft_1{ width:100%; height:30px; float:left; margin:0px; background:url(../iCon/icon_sonha.png) no-repeat 5px center scroll transparent} 
+.Tear_ft_1 .nVar_Tear_ft_1 .name_ft{ font-size:15px; text-transform:uppercase; color:#ce170f; margin:auto 5px auto 36px; line-height:30px; display:inline-block}
+.Tear_ft_1 .nVar_Tear_ft_1 .name_ft span{ font-size:12px; font-weight:bold; font-style:italic; color:#ff3c00; text-transform:none}
+.Content_Tear_ft_1{ width:100%; height:auto; float:left; margin:5px 0px}
+.Content_Tear_ft_1 .ct_ft{font-size:12px; margin:0px 5px; display:block}
+.Content_Tear_ft_1 .hotline{ color:#F00}
+.Content_Tear_ft_1 .Map_ft{ font-weight:bold; color:#568e13; display:block; margin:2px 5px; font-size:11px}
+.Content_Tear_ft_1 .Map_ft span{ width:10px; height:16px; float:left; margin:2px 5px 2px 2px; background:url(../iCon/icon_Maps.png) no-repeat}
+#Cate_Footer{width:1200px; height:auto; margin:25px auto 5px auto; border-bottom:1px dashed #e8e5e5; padding-bottom:15px}
+.Cate_Ft{ width:18%; height:auto; float:left; margin:0px 5px}
+.Cate_Ft .Name_Cate{font-size: 16px;
+    
+    text-transform: uppercase;
+    display: block;
+ 
+    font-family: Condensed;
+    color: #383838;
+}
+.Cate_Ft .Line_cate{  width: 100%;
+    height: 10px;
+    background: url(../iCon/bottoms_list.gif) no-repeat left center scroll transparent;
+    float: left;
+    margin: 5px 0px 10px 0px;
+}
+.Cate_Ft .Content_Cate_Ft{ width:100%; height:auto; float:left; margin:0px}
+.Cate_Ft .Content_Cate_Ft a {
+    font-size: 13px;
+    color: #454444;
+    margin: 5px 2px;
+    display: block;
+}
+.Cate_Ft .Content_Cate_Ft a:before{content:'›  '}
+.Fanpage{ width:24%; height:167px; margin:0px; float:right; overflow:hidden}
+#Maps_Homes{width:1200px; height:100px; margin:5px auto}
+#Dangky{width:1200px; height:auto; margin:5px auto}
+#Autoship{ width:100%; height:auto; text-align:center; float:left}
+#Autoship a{ margin:5px; display:inline-block}
+#Chungnhan{ width:100%; height:auto; float:left; margin:5px 0px; text-align:center}
+#Chungnhan a img{ width:150px; border-radius:5px; height:auto; margin:3px; display:inline-block; border:1px solid #e8e5e5}
+#Info_Company{width:1200px; height:auto; margin:5px auto; text-align:center}
+#Info_Company .Line_cp{ width:100%; height:1px; background:#e8e5e5; display:inline-block; margin:5px 0px; text-align:center }
+#Info_Company .cp1{text-align:center; font-size:13px; display:block; margin:2px auto; font-weight:bold}
+#Info_Company .cp2{text-align:center; font-size:12px; display:block; margin:2px 5px}
+.fb-page{ width:100% !important; float:left; height:auto}
+.fb-comments, .fb-comments iframe[style], .fb-like-box, .fb-like-box iframe[style], .fb-comments span, .fb-comments iframe span[style], .fb-like-box span, .fb-like-box iframe span[style]
+ {
+ 
+       width: 100% !important;
+ 
+}
+ .fb-like{ width:118px; height:15px; float:left; margin:7px 6px 7px 0px}
+.tweet{ width:70px; height:15px; float:left; margin:7px 5px}
+.float-ck { position: fixed; bottom: 0px; z-index: 9000}
+* html .float-ck {position:absolute;bottom:auto;top:expression(eval (document.documentElement.scrollTop+document.docum entElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0))) ;}
+ 
+#hide_float_left {text-align:left; font-size: 11px;}
+#hide_float_left a {background: #01AEF0; padding: 2px 4px; color: #FFF;}
+#Top_Footer{ width:100%; height:85px; float:left; margin:0px}
+#Left_TopFooter {width:20%; height:100%; margin:0px; float:left; display:table; table-layout:fixed}
+#Left_TopFooter a{display:table-cell; vertical-align:middle; text-align:center}
+#Left_TopFooter img{ max-width:100%; height:auto;}
+#Center_TopFooter{ width:50%; height:auto; float:left; margin:0px}
+#Right_TopFooter{ width:30%; height:auto; float:left; margin:0px}
+#Right_TopFooter img{ width:30%; height:auto; float:left; margin:18px 5px }
+.Linkout {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin: 0px; font-size:10px; color:#FFF; clear:both
+}
+.Linkout a{font-size:10px; color:#FFF; margin:3px; display:inline-block}

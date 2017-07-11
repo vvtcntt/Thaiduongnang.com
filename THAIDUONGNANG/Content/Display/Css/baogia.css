@@ -1,0 +1,38 @@
+﻿@charset "utf-8";#Baogia{width:100%;height:auto;margin:10px auto;box-shadow:0px 0px 10px 0px #c2c2c2;padding:10px 0px}
+#Head_Top{width:80%;height:auto;margin:5px auto;height:104px}
+#Head_Top #Left_Head{width:40%;height:100%;margin:0px;float:left;}
+#Head_Top #Right_Head{width:60%;height:auto;float:left;margin:0px}
+#Head_Top #Right_Head .hd1{font-size:20px;color:#656565;text-transform:uppercase;margin:5px;font-family:Condensed;text-align:right;display:block;font-weight:bold}
+#Head_Top #Right_Head .hd2{font-size:12px;color:#4f4f4f;margin:2px;display:block;text-align:right}
+#Head_Top #Right_Head .hd3{font-size:12px;color:#4f4f4f;margin:2px;display:block;text-align:right}
+#Head_Top #Right_Head .hd4{font-size:12px;color:#4f4f4f;margin:2px;display:block;text-align:right}
+#Content_Baogia{width:80%;height:auto;margin:0px auto}
+#Content_Baogia h1{font-size:23px;color:#000;text-transform:uppercase;text-align:center;margin:25px 5px 5px 5px}
+.line_bg{width:80%;height:1px;border-bottom:1px solid #d7d7d7;margin:10px auto}
+#Content_Baogia .date1{font-size:12px;text-align:right;display:block;margin:5px;color:#414141;font-style:italic}
+#Content_Baogia .kg{font-size:12px;display:block;margin:10px 5px;color:#414141;text-align:center;font-weight:bold}
+#Tableb{width:100%;height:auto;float:left;margin:10px 0px;border:1px solid #dcdcdc;border-right:none;border-bottom:none}
+#Tableb .Ord{width:5%;text-align:center}
+#Tableb .Name{width:40%;;text-align:center}
+#Tableb .Code{width:10%;;text-align:center}
+#Tableb .Price{width:14%;;text-align:center}
+#Tableb .Quality{width:4%;text-align:center}
+#Tableb .SumPrice{width:14%;text-align:center}
+#Tableb .Image{width:12%;text-align:center}
+#Tableb .Head_tb{height:25px;text-transform:uppercase;font-weight:bold}
+#Tableb td{text-indent:5px;    border: 1px solid #dadada;}
+#Tableb tr{line-height:normal !important}
+#Tableb .Names a{font-weight:bold;margin:3px 5px;color:#424242}
+#Tableb .Names .n2{font-weight:normal;margin:3px 5px;display:block;font-style:italic}
+#Tableb .Codes{font-weight:bold;text-align:center}
+#Tableb .Codes a{margin:3px 5px;color:#424242}
+#Tableb .Prices{text-align:center}
+#Tableb .Ords{text-align:center}
+#Tableb .Qualitys{text-align:center}
+#Tableb .SumPrices{text-align:center}
+#Tableb .Images img{width:90%;margin:5px auto;display:block}
+.ghichu_bg{font-weight:bold;text-decoration:underline;margin:5px 5px 20px 5px;display:block;font-size:14px}
+.ghichu1{font-size:12px;font-style:italic;color:#525252;margin:5px 5px 5px 30px;display:block}
+.Printer{text-align:center;display:block;height:30px;color:#515151;line-height:30px;margin:10px 0px}
+.Printer span.icon{width:30px;height:30px;background:url(../iCon/iCon_Printer.png) no-repeat;display:inline-block}
+.Printer span{line-height:30px;display:inline-block}
