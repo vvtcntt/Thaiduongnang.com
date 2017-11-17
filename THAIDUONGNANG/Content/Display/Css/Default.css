@@ -72,24 +72,8 @@ header{width:100%; float:left; padding:0; margin:0}
 #Menu_Banner ul li.li_1 .ul_2 li .ul_3{ width:170px; float:left ; margin:-28px 0px 0px 168px; display:none}
 #Menu_Banner ul li.li_1 .ul_2 li:hover .ul_3{display:block}
 #Menu_Banner ul li.li_1 .ul_2 li .ul_3 li{ margin:0px}
-.dm{ width:100#; padding:3px 10px; display:block; background:#0691cb; color:#FFF; text-align:center; display:none}
+.dm{ width:100%; padding:3px 10px; display:block; background:#0691cb; color:#FFF; text-align:center; display:none}
 .dm span{ width:12px; height:12px; background:url(../iCon/iconMenu.png) !important; display:inline-block; margin:auto 15px auto 5px}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 section{ width:100%; height:auto; float:left; margin:0}
 #Main{ width:1200px; height:auto; margin:0px auto; background:#FFF}
 #Content{ width:1180px; height:auto; margin:0px 10px}
@@ -301,10 +285,9 @@ font-size: 16px;
 .tweet{ width:70px; height:15px; float:left; margin:7px 5px}
 .float-ck { position: fixed; bottom: 0px; z-index: 9000}
 * html .float-ck {position:absolute;bottom:auto;top:expression(eval (document.documentElement.scrollTop+document.docum entElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0))) ;}
- 
 #hide_float_left {text-align:left; font-size: 11px;}
 #hide_float_left a {background: #01AEF0; padding: 2px 4px; color: #FFF;}
-#Top_Footer{ width:100%; height:85px; float:left; margin:0px}
+#Top_Footer{ width:100%; height:auto; float:left; margin:0px}
 #Left_TopFooter {width:20%; height:100%; margin:0px; float:left; display:table; table-layout:fixed}
 #Left_TopFooter a{display:table-cell; vertical-align:middle; text-align:center}
 #Left_TopFooter img{ max-width:100%; height:auto;}
@@ -318,3 +301,72 @@ font-size: 16px;
     margin: 0px; font-size:10px; color:#FFF; clear:both
 }
 .Linkout a{font-size:10px; color:#FFF; margin:3px; display:inline-block}
+.timeWorks {
+    width: auto;
+    height: auto;
+    float: left;
+    margin: 0px;
+    color: #333;
+    border: 1px dashed #a7a7a7;
+    position: relative;
+    border-radius: 5px;
+    padding: 7px;
+    background: url(../icon/clock.gif) no-repeat 7px center scroll #fffef1;
+    padding-left: 85px;
+}
+.timeWorks .tm1 {
+        font-size: 12px;
+        margin: 0px 5px;
+        display: block;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+.timeWorks .tm1 strong {
+            color: #ff5501;
+            font-size: 22px;
+            font-weight: bold
+        }
+.timeWorks .tm2 {
+        font-size: 14px;
+        margin: 0px 5px;
+        display: block;
+        font-style: italic
+    }
+
+.timeWorks .tm3 {
+        font-size: 14px;
+        margin: 0px 5px;
+        display: block;
+        color: #ff5501
+    }
+
+.timeWorks .tm3 strong {
+            color: #0080ec
+        }
+.hotlineSwitchBoard {
+    width: auto;
+    height: auto;
+    float: left;
+    margin: 0px;
+    background: url(../icon/hotline-icons.png) no-repeat right center scroll transparent;
+    padding-right: 55px
+}
+
+    .hotlineSwitchBoard .nameHotline {
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 5px 5px 0px 5px;
+        text-align: right;
+        display: block;
+        text-transform: uppercase
+    }
+
+    .hotlineSwitchBoard .hotlines {
+        font-size: 23px;
+        color: #F00;
+        font-weight: bold;
+        margin: 1px 5px;
+        display: block;
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif
+    }

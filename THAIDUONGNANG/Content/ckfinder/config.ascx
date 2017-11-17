@@ -64,15 +64,15 @@
 		}
 		Thumbnails.Enabled = true;
 		Thumbnails.DirectAccess = false;
-		Thumbnails.MaxWidth = 300;
-		Thumbnails.MaxHeight = 300;
+		Thumbnails.MaxWidth = 200;
+        Thumbnails.MaxHeight = 200;
 		Thumbnails.Quality = 80;
 
 		// Set the maximum size of uploaded images. If an uploaded image is
 		// larger, it gets scaled down proportionally. Set to 0 to disable this
 		// feature.
-		Images.MaxWidth = 2300;
-		Images.MaxHeight = 2300;
+		Images.MaxWidth = 1600;
+		Images.MaxHeight = 1200;
 		Images.Quality = 80;
 
 		// Indicates that the file size (MaxSize) for images must be checked only

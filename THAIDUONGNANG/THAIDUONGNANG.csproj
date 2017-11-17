@@ -20,6 +20,8 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -1364,6 +1366,7 @@
     <Content Include="Content\Display\iCon\GoogleAuthorShip.png" />
     <Content Include="Content\Display\iCon\HD.jpg" />
     <Content Include="Content\Display\iCon\home_w.png" />
+    <Content Include="Content\Display\iCon\hotline-icons.png" />
     <Content Include="Content\Display\iCon\ho_tro_vien.png" />
     <Content Include="Content\Display\iCon\icon-car-local.jpg" />
     <Content Include="Content\Display\iCon\icon-diadiem.png" />
@@ -2084,6 +2087,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Properties\PublishProfiles\Thaiduongnang.pubxml" />
     <None Include="Scripts\jquery-2.2.0.intellisense.js" />
     <Content Include="Scripts\jquery-2.2.0.js" />

@@ -60,6 +60,13 @@
             <div id="Center_TopFooter">
                 <h4>Công ty cổ phần quốc tế sơn hà</h4>
                 <h3>@Model.Name</h3>
+                <div class="timeWorks" style="width:450px; float:none; margin:5px auto">
+                    <span class="tm1">Thời gian làm việc : <strong>8H00 - 21H15</strong> </span>
+                    <span class="tm2">Làm việc tất cả các ngày trong tuần</span>
+                    <span class="tm3">
+                        Khách hàng mua hàng từ <strong>18H00 - 21H15</strong> cần đặt lịch trước qua số hotline : <strong>1900 63 66 95</strong>
+                    </span>
+                </div>
             </div>
             <div id="Right_TopFooter">
                 <a href="@Model.BCT" title="Đăng ký bộ cong thương"><img alt="Đăng ký bộ công thương" src="~/Content/Display/iCon/dkbct.png" /></a>
@@ -83,7 +90,7 @@
                         <span class="ct_ft">Địa chỉ : <span>@Model.Address</span></span>
                         <span class="ct_ft">Điện thoại : <span>@Model.MobileIN</span>    </span>
                         <span class="ct_ft hotline">
-                            Hotline :<span>@Model.HotlineIN</span>
+                            Hotline :<span>@Model.HotlineIN - @Model.HotlineOUT</span>
                     </span>
                         <span class="ct_ft">Email: <span>@Model.Email
 </span></span>
