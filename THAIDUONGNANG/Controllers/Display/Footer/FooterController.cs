@@ -68,5 +68,9 @@ namespace THAIDUONGNANG.Controllers.Display.Footer
             ViewBag.chuoiurl = chuoiurl;
                 return PartialView(db.tblConfigs.First());
         }
+        public PartialViewResult callPartial()
+        {
+            return PartialView(db.tblConfigs.First());
+        }
     }
 }

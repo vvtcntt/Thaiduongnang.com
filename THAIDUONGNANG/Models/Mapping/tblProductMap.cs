@@ -104,6 +104,8 @@ namespace THAIDUONGNANG.Models.Mapping
             this.Property(t => t.Status).HasColumnName("Status");
             this.Property(t => t.Active).HasColumnName("Active");
             this.Property(t => t.ProductSale).HasColumnName("ProductSale");
+            this.Property(t => t.Priority).HasColumnName("Priority");
+
             this.Property(t => t.New).HasColumnName("New");
             this.Property(t => t.ViewHomes).HasColumnName("ViewHomes");
             this.Property(t => t.Visit).HasColumnName("Visit");

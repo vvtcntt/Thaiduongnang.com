@@ -29,20 +29,29 @@ namespace THAIDUONGNANG.Models.Mapping
             this.Property(t => t.Name)
                 .HasMaxLength(500);
 
-            this.Property(t => t.Address)
+            this.Property(t => t.Address1)
+                         .HasMaxLength(500);
+            this.Property(t => t.Address2)
                 .HasMaxLength(500);
 
-            this.Property(t => t.MobileIN)
+            this.Property(t => t.Mobile1)
                 .HasMaxLength(500);
 
-            this.Property(t => t.HotlineIN)
+            this.Property(t => t.Hotline1)
                 .HasMaxLength(50);
 
-            this.Property(t => t.MobileOUT)
+            this.Property(t => t.Mobile2)
                 .HasMaxLength(500);
 
-            this.Property(t => t.HotlineOUT)
+            this.Property(t => t.Hotline2)
                 .HasMaxLength(50);
+            this.Property(t => t.PbxSell)
+                .HasMaxLength(50);
+            this.Property(t => t.PbxGua)
+                .HasMaxLength(50);
+            this.Property(t => t.PbxDen)
+                .HasMaxLength(50);
+
 
             this.Property(t => t.Email)
                 .HasMaxLength(100);
@@ -85,7 +94,12 @@ namespace THAIDUONGNANG.Models.Mapping
 
             this.Property(t => t.Host)
                 .HasMaxLength(200);
-
+            this.Property(t => t.TitleSale)
+             .HasMaxLength(50);
+            this.Property(t => t.ImageSale)
+                .HasMaxLength(50);
+            this.Property(t => t.TimeWork)
+            .HasMaxLength(50);
             // Table & Column Mappings
             this.ToTable("tblConfig");
             this.Property(t => t.ID).HasColumnName("ID");
@@ -99,11 +113,15 @@ namespace THAIDUONGNANG.Models.Mapping
             this.Property(t => t.PopupSupport).HasColumnName("PopupSupport");
             this.Property(t => t.Footer).HasColumnName("Footer");
             this.Property(t => t.Name).HasColumnName("Name");
-            this.Property(t => t.Address).HasColumnName("Address");
-            this.Property(t => t.MobileIN).HasColumnName("MobileIN");
-            this.Property(t => t.HotlineIN).HasColumnName("HotlineIN");
-            this.Property(t => t.MobileOUT).HasColumnName("MobileOUT");
-            this.Property(t => t.HotlineOUT).HasColumnName("HotlineOUT");
+            this.Property(t => t.Address1).HasColumnName("Address1");
+            this.Property(t => t.Address2).HasColumnName("Address2");
+            this.Property(t => t.Mobile1).HasColumnName("Mobile1");
+            this.Property(t => t.Hotline1).HasColumnName("Hotline1");
+            this.Property(t => t.Mobile2).HasColumnName("Mobile2");
+            this.Property(t => t.Hotline2).HasColumnName("Hotline2");
+            this.Property(t => t.PbxDen).HasColumnName("PbxDen");
+            this.Property(t => t.PbxGua).HasColumnName("PbxGua");
+            this.Property(t => t.PbxSell).HasColumnName("PbxSell");
             this.Property(t => t.Email).HasColumnName("Email");
             this.Property(t => t.Slogan).HasColumnName("Slogan");
             this.Property(t => t.Authorship).HasColumnName("Authorship");
@@ -123,6 +141,12 @@ namespace THAIDUONGNANG.Models.Mapping
             this.Property(t => t.Port).HasColumnName("Port");
             this.Property(t => t.Timeout).HasColumnName("Timeout");
             this.Property(t => t.Language).HasColumnName("Language");
+            this.Property(t => t.TitleSale).HasColumnName("TitleSale");
+            this.Property(t => t.StartDateSale).HasColumnName("StartDateSale");
+            this.Property(t => t.EndDateSale).HasColumnName("EndDateSale");
+            this.Property(t => t.EndDateSale).HasColumnName("EndDateSale");
+            this.Property(t => t.ImageSale).HasColumnName("ImageSale");
+            this.Property(t => t.TimeWork).HasColumnName("TimeWork");
         }
     }
 }

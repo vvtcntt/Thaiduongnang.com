@@ -67,9 +67,7 @@ namespace THAIDUONGNANG.Controllers.Display.Section.News
                 //Load tin mới
 
             }
-            int iduser = int.Parse(tblnews.idUser.ToString());
-            var User = db.tblUsers.Find(iduser);
-            ViewBag.UserName = User.FullName;
+       
             string chuoinewnew = "";
             var NewsNew = db.tblNews.Where(p => p.Active == true && p.Tag!=tag).OrderByDescending(p => p.DateCreate).Take(5).ToList();
             for (int i = 0; i < NewsNew.Count; i++)

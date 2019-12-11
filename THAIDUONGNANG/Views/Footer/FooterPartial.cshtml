@@ -34,7 +34,7 @@
             </div>
             <div class="Content_Cate_Ft">
                 @Html.Raw(ViewBag.chuoipd)
-                
+
             </div>
         </div>
         <div class="Cate_Ft tuvan">
@@ -43,7 +43,7 @@
                 <span class="Line_cate"></span>
             </div>
             <div class="Content_Cate_Ft">
-                   @Html.Raw(ViewBag.baogia)
+                @Html.Raw(ViewBag.baogia)
             </div>
         </div>
         <div class="Fanpage">
@@ -74,7 +74,7 @@
                 <a href="@Model.SKH" title="Chứng nhận sở kế hoạch đầu tư"><img alt="Chứng nhận sở kế hoạch đầu tư" src="~/Content/Display/iCon/so-ke-hoach-dau-tu.jpg" /></a>
             </div>
         </div><div class="Clear"></div>
-       
+
         <div class="Clear"></div>
         <div id="Info_Footer">
             <div class="Tear_ft">
@@ -84,16 +84,38 @@
                 </div>
                 <div class="Tear_ft_1">
                     <div class="nVar_Tear_ft_1">
-                        <span class="name_ft">Hà Nội <span>(trụ sở chính)</span></span>
+                        <span class="name_ft">Hà Nội <span>(Trụ sở 01)</span></span>
                     </div>
                     <div class="Content_Tear_ft_1">
-                        <span class="ct_ft">Địa chỉ : <span>@Model.Address</span></span>
-                        <span class="ct_ft">Điện thoại : <span>@Model.MobileIN</span>    </span>
+                        <span class="ct_ft">Cơ sở 01 : <span>@Model.Address1</span></span>
+                        <span class="ct_ft">Điện thoại : <span>@Model.Mobile1</span>    </span>
                         <span class="ct_ft hotline">
-                            Hotline :<span>@Model.HotlineIN - @Model.HotlineOUT</span>
-                    </span>
-                        <span class="ct_ft">Email: <span>@Model.Email
-</span></span>
+                            Hotline :<span>@Model.Hotline1 - @Model.PbxSell</span>
+                        </span>
+                        <span class="ct_ft">
+                            Email: <span>
+                                @Model.Email
+                            </span>
+                        </span>
+                        <span class="Map_ft"><span class="icon"></span> Bản đồ đường đi</span>
+
+                    </div>
+                </div>
+                <div class="Tear_ft_1">
+                    <div class="nVar_Tear_ft_1">
+                        <span class="name_ft">Hà Nội <span>(Trụ sở 02)</span></span>
+                    </div>
+                    <div class="Content_Tear_ft_1">
+                        <span class="ct_ft">Cơ sở 01 : <span>@Model.Address2</span></span>
+                        <span class="ct_ft">Điện thoại : <span>@Model.Mobile2</span>    </span>
+                        <span class="ct_ft hotline">
+                            Hotline :<span>@Model.Hotline2 - @Model.PbxSell</span>
+                        </span>
+                        <span class="ct_ft">
+                            Email: <span>
+                                @Model.Email
+                            </span>
+                        </span>
                         <span class="Map_ft"><span class="icon"></span> Bản đồ đường đi</span>
 
                     </div>
@@ -114,10 +136,10 @@
     </div>
     <div class="Clear"></div>
     <div class="Linkout">
-    @Html.Raw(ViewBag.chuoiurl)
+        @Html.Raw(ViewBag.chuoiurl)
         <a href="http://thietbivesinhInax.vn" title="Thiết bị vệ sinh">Thiết bị vệ sinh</a> chính hãng với thương hiệu <a href="http://thietbivesinhtoto.vn" title="Thiết bị vệ sinh toto">Thiết bị vệ sinh TOTO</a> hay <a href="http://thietbivesinhcotto.net" title="Thiết bị vệ sinh cotto">Thiết bị vệ sinh cotto</a> giá rẻ !
-   
-</div>
+
+    </div>
     <div class="Clear"></div>
     <div id="Dangky">
         <div id="Autoship">
@@ -126,7 +148,7 @@
             </a>
             <a href="https://plus.google.com/@Model.Authorship?rel=author"><img src="~/Content/Display/iCon/GoogleAuthorShip.png" alt="Đăng ký google authorShip" /></a>
         </div>
-    
+
         <div class="Clear"></div>
     </div>
     <div class="Clear"></div>
@@ -139,5 +161,6 @@
         <div class="Clear"></div>
     </div>
 </div>
- 
+
 @Html.Raw(Model.CodeChat)
+@{ Html.RenderAction("callPartial", "Footter");}

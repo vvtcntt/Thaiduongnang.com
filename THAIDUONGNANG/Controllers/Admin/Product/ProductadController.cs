@@ -157,7 +157,66 @@ namespace THAIDUONGNANG.Controllers.Admin.Productad
 
         //
         // GET: /Product/Create
+        public ActionResult ProductEditActive(string chk, string nchecked)
+        {
 
+            var Product = db.tblProducts.Find(int.Parse(chk));
+            var result = string.Empty;
+            if (nchecked == "true")
+            {
+                Product.Active = false;
+            }
+            else
+            { Product.Active = true; }
+
+            //db.Entry(Product).State = System.Data.EntityState.Modified;
+            db.SaveChanges();
+            #region[Updatehistory]
+            Updatehistoty.UpdateHistory("Edit  Active Product", Request.Cookies["Username"].Values["FullName"].ToString(), Request.Cookies["Username"].Values["UserID"].ToString());
+            #endregion
+            result = "Active Updated.";
+            return Json(new { result = result });
+        }
+        public ActionResult ProductEditProductSale(string chk, string nchecked)
+        {
+
+            var Product = db.tblProducts.Find(int.Parse(chk));
+            var result = string.Empty;
+            if (nchecked == "true")
+            {
+                Product.ProductSale = false;
+            }
+            else
+            { Product.ProductSale = true; }
+
+            //db.Entry(Product).State = System.Data.EntityState.Modified;
+            db.SaveChanges();
+            #region[Updatehistory]
+            Updatehistoty.UpdateHistory("Edit  ProductSale Product", Request.Cookies["Username"].Values["FullName"].ToString(), Request.Cookies["Username"].Values["UserID"].ToString());
+            #endregion
+            result = "Active Updated.";
+            return Json(new { result = result });
+        }
+        public ActionResult ProductEditPriority(string chk, string nchecked)
+        {
+
+            var Product = db.tblProducts.Find(int.Parse(chk));
+            var result = string.Empty;
+            if (nchecked == "true")
+            {
+                Product.Priority = false;
+            }
+            else
+            { Product.Priority = true; }
+
+            //db.Entry(Product).State = System.Data.EntityState.Modified;
+            db.SaveChanges();
+            #region[Updatehistory]
+            Updatehistoty.UpdateHistory("Edit  Priority Product", Request.Cookies["Username"].Values["FullName"].ToString(), Request.Cookies["Username"].Values["UserID"].ToString());
+            #endregion
+            result = "Active Updated.";
+            return Json(new { result = result });
+        }
         public ActionResult Create(string id)
         {
             if ((Request.Cookies["Username"] == null))
@@ -756,27 +815,7 @@ namespace THAIDUONGNANG.Controllers.Admin.Productad
             return Json(new { result = result });
         }
         [HttpPost]
-        public ActionResult ProductEditActive(string chk, string nchecked)
-        {
-
-            var Product = db.tblProducts.Find(int.Parse(chk));
-            var result = string.Empty;
-            if (nchecked == "true")
-            {
-                Product.Active = false;
-            }
-            else
-            { Product.Active = true; }
-
-            //db.Entry(Product).State = System.Data.EntityState.Modified;
-            db.SaveChanges();
-            #region[Updatehistory]
-            Updatehistoty.UpdateHistory("Edit  Active Product", Request.Cookies["Username"].Values["FullName"].ToString(), Request.Cookies["Username"].Values["UserID"].ToString());
-            #endregion
-            result = "Active Updated.";
-            return Json(new { result = result });
-        }
-        #region[Delete]
+         #region[Delete]
         public ActionResult DeleteProduct(int id)
         {
             tblProduct tblproduct = db.tblProducts.Find(id);

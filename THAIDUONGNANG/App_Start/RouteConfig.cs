@@ -21,6 +21,7 @@ namespace THAIDUONGNANG
 
             routes.MapRoute("TagNews", "TagNews/{Tag}/{*catchall}", new { controller = "News", action = "TagNews", tag = UrlParameter.Optional }, new { controller = "^N.*", action = "^TagNews$" });
             routes.MapRoute("ListNews", "2/{Tag}/{*catchall}", new { controller = "News", action = "ListNews", tag = UrlParameter.Optional }, new { controller = "^N.*", action = "^ListNews$" });
+            routes.MapRoute(name: "ban-tin-khuyen-mai", url: "ban-tin-khuyen-mai", defaults: new { controller = "product", action = "detail" });
 
             routes.MapRoute(name: "Hang-san-xuat", url: "Hang-san-xuat", defaults: new { controller = "ManufacturesDeplay", action = "ListManufactures" });
             routes.MapRoute(name: "He-Thong-phan-phoi", url: "He-Thong-phan-phoi", defaults: new { controller = "Agencys", action = "ListAgency" });

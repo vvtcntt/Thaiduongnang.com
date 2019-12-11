@@ -36,6 +36,8 @@ namespace THAIDUONGNANG.Models
         public Nullable<bool> Status { get; set; }
         public Nullable<bool> Active { get; set; }
         public Nullable<bool> ProductSale { get; set; }
+        public Nullable<bool> Priority { get; set; }
+
         public Nullable<bool> New { get; set; }
         public Nullable<bool> ViewHomes { get; set; }
         public Nullable<int> Visit { get; set; }
